@@ -1109,7 +1109,7 @@ tag_generator:
 <div class="section" id="githubpages">
 <h3><a class="toc-backref" href="#id70"><span class="sectnum">1.8.8</span> 怎么解决githubpages不能识别下划线开头的目录？</a><a class="headerlink" href="#githubpages" title="永久链接至标题">¶</a></h3>
 <p><a class="reference external" href="https://blog.csdn.net/lineuman/article/details/89600484">githubpages不能识别下划线开头的目录解决方法</a></p>
-<p>使用sphinx创建的文档，资源文件夹前面会带着下划线，本地使用没有问题，提交到github上面，想使用github pages的时候提示404，原因为github pages的jekyll模版会忽略下划线开头的文件，所以要禁用jekyll</p>
+<p>使用sphinx创建的文档，资源文件夹前面会带着下划线，本地使用没有问题，提交到github上面，想使用github pages的时候提示404，原因为github pages的jekyll模版会忽略下划线开头的文件，自动忽略下划线开头的目录，从而导致引用不到CSS,JAVASCRIPT,ETC.，所以要禁用jekyll</p>
 <p>禁用方法就是在文件在项目目录下添加.nojekyll文件</p>
 <p>CDN</p>
 <p><a class="reference external" href="https://cdn.baomitu.com/">CDN前端静态资源库baomitu-used in maupassant-hexo</a></p>
@@ -1255,7 +1255,7 @@ step 4: 在.travis.yml中，在编译完后，deploy之前用sed替换，step 3 
 <p>1. 主要是修改deploy部分，决定gh-token和推送部署到什么repo的什么分支。
 如果是xxxx.github.io就推到master, 如果是子目录repo,则推送到gh-pages分支。</p>
 <ol class="arabic simple" start="2">
-<li><p>设置 root变量， 如果是子目录repo，则需要设置相应的子目录repo名字。这样在网页引用css等资源时可以直接引用到。因为hexo引用CSS等资源时用的是绝对目录，如/{子目录repo名}/css/xxx.css, sphinx 用的是相对目录，如 _static/css/xxx.css。 此处因为sphinx资源目录前面带了下划线， _ , 因hexo和jekyll不要处理此类目录，会导致引用不到，所以在根目录要添加.nojekyll文件, 详细请参考 <a class="reference internal" href="#githubpages">怎么解决githubpages不能识别下划线开头的目录？</a></p></li>
+<li><p>设置 root变量， 如果是子目录repo，则需要设置相应的子目录repo名字。这样在网页引用css等资源时可以直接引用到。因为hexo引用CSS等资源时用的是绝对目录，如/{子目录repo名}/css/xxx.css, sphinx 用的是相对目录，如 _static/css/xxx.css。 此处因为sphinx资源目录前面带了下划线， _ , 因hexo和jekyll会自动忽略下划线开头的目录，从而导致引用不到CSS,JAVASCRIPT,ETC.，所以在根目录要添加.nojekyll文件, 详细请参考 <a class="reference internal" href="#githubpages">怎么解决githubpages不能识别下划线开头的目录？</a></p></li>
 </ol>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="p">:</span> <span class="o">/</span><span class="n">hexo</span><span class="o">-</span><span class="nb">next</span><span class="o">-</span><span class="n">muse</span><span class="o">/</span>
 <span class="c1"># Deployment</span>
