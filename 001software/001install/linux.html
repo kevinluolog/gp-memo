@@ -48,54 +48,65 @@
   <ul>
 <li><a class="reference internal" href="#"><span class="sectnum">1</span> gramma and template</a><ul>
 <li><a class="reference internal" href="#id1"><span class="sectnum">1.1</span> 网络资源地址</a></li>
-<li><a class="reference internal" href="#linux"><span class="sectnum">1.2</span> Linux命令</a><ul>
-<li><a class="reference internal" href="#wget"><span class="sectnum">1.2.1</span> wget</a></li>
-<li><a class="reference internal" href="#gsub"><span class="sectnum">1.2.2</span> gsub函数</a></li>
-<li><a class="reference internal" href="#subgsub"><span class="sectnum">1.2.3</span> sub和gsub的区别</a></li>
-<li><a class="reference internal" href="#awk-gawk"><span class="sectnum">1.2.4</span> awk gawk</a></li>
-<li><a class="reference internal" href="#find"><span class="sectnum">1.2.5</span> find</a><ul>
-<li><a class="reference internal" href="#id2"><span class="sectnum">1.2.5.1</span> 命令选项：</a></li>
-<li><a class="reference internal" href="#id3"><span class="sectnum">1.2.5.2</span> 常用的命令展示</a></li>
-<li><a class="reference internal" href="#id4"><span class="sectnum">1.2.5.3</span> 查找普通文件/目录</a></li>
-<li><a class="reference internal" href="#id5"><span class="sectnum">1.2.5.4</span> 只显示1级目录文件且过滤自身</a></li>
-<li><a class="reference internal" href="#access"><span class="sectnum">1.2.5.5</span> 查找一天内被访问过(access)的文件</a></li>
-<li><a class="reference internal" href="#inode"><span class="sectnum">1.2.5.6</span> 查询inode相同的文件</a></li>
-<li><a class="reference internal" href="#id6"><span class="sectnum">1.2.5.7</span> 除了某个文件以为，其余的均删除</a></li>
-<li><a class="reference internal" href="#id7"><span class="sectnum">1.2.5.8</span> 删除目录下所有文件</a></li>
-<li><a class="reference internal" href="#id8"><span class="sectnum">1.2.5.9</span> 查看当前路径下所有文件的信息：</a></li>
-<li><a class="reference internal" href="#id9"><span class="sectnum">1.2.5.10</span> 查找指定时间内修改过的文件</a></li>
-<li><a class="reference internal" href="#id10"><span class="sectnum">1.2.5.11</span> 按照目录或文件的权限来查找文件</a></li>
-<li><a class="reference internal" href="#id11"><span class="sectnum">1.2.5.12</span> 按大小查找文件</a></li>
-<li><a class="reference internal" href="#testtest4"><span class="sectnum">1.2.5.13</span> 在test目录下查找不在test4子目录之内的所有文件</a></li>
-<li><a class="reference internal" href="#yum-log-hhh-txt"><span class="sectnum">1.2.5.14</span> 查找比yum.log 但不比hhh.txt新的文件</a></li>
-<li><a class="reference internal" href="#log2012-log"><span class="sectnum">1.2.5.15</span> 查找更改时间在比log2012.log文件新的文件</a></li>
-<li><a class="reference internal" href="#m"><span class="sectnum">1.2.5.16</span> 在当前目录下查找文件长度大于1 M字节的文件</a></li>
-<li><a class="reference internal" href="#home-apache100"><span class="sectnum">1.2.5.17</span> 在/home/apache目录下查找文件长度恰好为100字节的文件</a></li>
-<li><a class="reference internal" href="#id12"><span class="sectnum">1.2.5.18</span> 在当前目录下查找长度超过10块的文件</a></li>
-<li><a class="reference internal" href="#id13"><span class="sectnum">1.2.5.19</span> 其他命令：</a></li>
-<li><a class="reference internal" href="#findexecokprint"><span class="sectnum">1.2.5.20</span> find命令之execokprint</a></li>
-<li><a class="reference internal" href="#n"><span class="sectnum">1.2.5.21</span> 在目录中查找更改时间在n日以前的文件并删除它们</a></li>
-<li><a class="reference internal" href="#id14"><span class="sectnum">1.2.5.22</span> 在目录中查找更改时间在n日以前的文件并删除它们，在删除之前先给出提示</a></li>
-<li><a class="reference internal" href="#execgrep"><span class="sectnum">1.2.5.23</span> exec中使用grep命令</a></li>
-<li><a class="reference internal" href="#id15"><span class="sectnum">1.2.5.24</span> 查找文件移动到指定目录</a></li>
-<li><a class="reference internal" href="#execcp"><span class="sectnum">1.2.5.25</span> 用exec选项执行cp命令</a></li>
+<li><a class="reference internal" href="#linux-help"><span class="sectnum">1.2</span> Linux命令–help</a><ul>
+<li><a class="reference internal" href="#rm"><span class="sectnum">1.2.1</span> rm</a></li>
+<li><a class="reference internal" href="#cp"><span class="sectnum">1.2.2</span> cp</a></li>
+<li><a class="reference internal" href="#touch"><span class="sectnum">1.2.3</span> touch</a></li>
+<li><a class="reference internal" href="#ls"><span class="sectnum">1.2.4</span> ls</a></li>
+<li><a class="reference internal" href="#find"><span class="sectnum">1.2.5</span> find</a></li>
+<li><a class="reference internal" href="#sed"><span class="sectnum">1.2.6</span> sed</a></li>
+<li><a class="reference internal" href="#gawk"><span class="sectnum">1.2.7</span> gawk</a></li>
+<li><a class="reference internal" href="#awk"><span class="sectnum">1.2.8</span> awk</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#linux"><span class="sectnum">1.3</span> Linux命令</a><ul>
+<li><a class="reference internal" href="#wget"><span class="sectnum">1.3.1</span> wget</a></li>
+<li><a class="reference internal" href="#gsub"><span class="sectnum">1.3.2</span> gsub函数</a></li>
+<li><a class="reference internal" href="#subgsub"><span class="sectnum">1.3.3</span> sub和gsub的区别</a></li>
+<li><a class="reference internal" href="#awk-gawk"><span class="sectnum">1.3.4</span> awk gawk</a></li>
+<li><a class="reference internal" href="#id2"><span class="sectnum">1.3.5</span> find</a><ul>
+<li><a class="reference internal" href="#id3"><span class="sectnum">1.3.5.1</span> 命令选项：</a></li>
+<li><a class="reference internal" href="#id4"><span class="sectnum">1.3.5.2</span> 常用的命令展示</a></li>
+<li><a class="reference internal" href="#id5"><span class="sectnum">1.3.5.3</span> 查找普通文件/目录</a></li>
+<li><a class="reference internal" href="#id6"><span class="sectnum">1.3.5.4</span> 只显示1级目录文件且过滤自身</a></li>
+<li><a class="reference internal" href="#access"><span class="sectnum">1.3.5.5</span> 查找一天内被访问过(access)的文件</a></li>
+<li><a class="reference internal" href="#inode"><span class="sectnum">1.3.5.6</span> 查询inode相同的文件</a></li>
+<li><a class="reference internal" href="#id7"><span class="sectnum">1.3.5.7</span> 除了某个文件以为，其余的均删除</a></li>
+<li><a class="reference internal" href="#id8"><span class="sectnum">1.3.5.8</span> 删除目录下所有文件</a></li>
+<li><a class="reference internal" href="#id9"><span class="sectnum">1.3.5.9</span> 查看当前路径下所有文件的信息：</a></li>
+<li><a class="reference internal" href="#id10"><span class="sectnum">1.3.5.10</span> 查找指定时间内修改过的文件</a></li>
+<li><a class="reference internal" href="#id11"><span class="sectnum">1.3.5.11</span> 按照目录或文件的权限来查找文件</a></li>
+<li><a class="reference internal" href="#id12"><span class="sectnum">1.3.5.12</span> 按大小查找文件</a></li>
+<li><a class="reference internal" href="#testtest4"><span class="sectnum">1.3.5.13</span> 在test目录下查找不在test4子目录之内的所有文件</a></li>
+<li><a class="reference internal" href="#yum-log-hhh-txt"><span class="sectnum">1.3.5.14</span> 查找比yum.log 但不比hhh.txt新的文件</a></li>
+<li><a class="reference internal" href="#log2012-log"><span class="sectnum">1.3.5.15</span> 查找更改时间在比log2012.log文件新的文件</a></li>
+<li><a class="reference internal" href="#m"><span class="sectnum">1.3.5.16</span> 在当前目录下查找文件长度大于1 M字节的文件</a></li>
+<li><a class="reference internal" href="#home-apache100"><span class="sectnum">1.3.5.17</span> 在/home/apache目录下查找文件长度恰好为100字节的文件</a></li>
+<li><a class="reference internal" href="#id13"><span class="sectnum">1.3.5.18</span> 在当前目录下查找长度超过10块的文件</a></li>
+<li><a class="reference internal" href="#id14"><span class="sectnum">1.3.5.19</span> 其他命令：</a></li>
+<li><a class="reference internal" href="#findexecokprint"><span class="sectnum">1.3.5.20</span> find命令之execokprint</a></li>
+<li><a class="reference internal" href="#n"><span class="sectnum">1.3.5.21</span> 在目录中查找更改时间在n日以前的文件并删除它们</a></li>
+<li><a class="reference internal" href="#id15"><span class="sectnum">1.3.5.22</span> 在目录中查找更改时间在n日以前的文件并删除它们，在删除之前先给出提示</a></li>
+<li><a class="reference internal" href="#execgrep"><span class="sectnum">1.3.5.23</span> exec中使用grep命令</a></li>
+<li><a class="reference internal" href="#id16"><span class="sectnum">1.3.5.24</span> 查找文件移动到指定目录</a></li>
+<li><a class="reference internal" href="#execcp"><span class="sectnum">1.3.5.25</span> 用exec选项执行cp命令</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id16"><span class="sectnum">1.3</span> Linux常用命令大全</a><ul>
-<li><a class="reference internal" href="#mkdir"><span class="sectnum">1.3.1</span> 创建目录 mkdir</a></li>
-<li><a class="reference internal" href="#rmdir"><span class="sectnum">1.3.2</span> 删除文件 rmdir</a></li>
-<li><a class="reference internal" href="#touch"><span class="sectnum">1.3.3</span> 创建文件 touch</a></li>
-<li><a class="reference internal" href="#rm"><span class="sectnum">1.3.4</span> 删除文件或目录 rm</a></li>
-<li><a class="reference internal" href="#cp"><span class="sectnum">1.3.5</span> 复制文件或目录（可以对目标文件或目录重命名） cp</a></li>
-<li><a class="reference internal" href="#windows-mv"><span class="sectnum">1.3.6</span> 移动（类似于Windows中的剪切）mv</a></li>
-<li><a class="reference internal" href="#cat-tac-more-less-head-tail"><span class="sectnum">1.3.7</span> 查看文件内容cat tac more less head tail</a></li>
-<li><a class="reference internal" href="#misc"><span class="sectnum">1.3.8</span> misc</a><ul>
-<li><a class="reference internal" href="#linux-cp"><span class="sectnum">1.3.8.1</span> Linux-cp命令详解</a></li>
-<li><a class="reference internal" href="#xcopy-win-vs-cp-linux"><span class="sectnum">1.3.8.2</span> 拷贝命令比较，XCOPY(win) VS cp(linux)</a></li>
-<li><a class="reference internal" href="#gnumake-wildcard-win-vs-cp-linux"><span class="sectnum">1.3.8.3</span> gnumake-wildcard(win) VS cp(linux)</a></li>
-<li><a class="reference internal" href="#id17"><span class="sectnum">1.3.8.4</span> touch命令直接创建空白文件</a></li>
+<li><a class="reference internal" href="#id17"><span class="sectnum">1.4</span> Linux常用命令大全</a><ul>
+<li><a class="reference internal" href="#mkdir"><span class="sectnum">1.4.1</span> 创建目录 mkdir</a></li>
+<li><a class="reference internal" href="#rmdir"><span class="sectnum">1.4.2</span> 删除文件 rmdir</a></li>
+<li><a class="reference internal" href="#id18"><span class="sectnum">1.4.3</span> 创建文件 touch</a></li>
+<li><a class="reference internal" href="#id19"><span class="sectnum">1.4.4</span> 删除文件或目录 rm</a></li>
+<li><a class="reference internal" href="#id20"><span class="sectnum">1.4.5</span> 复制文件或目录（可以对目标文件或目录重命名） cp</a></li>
+<li><a class="reference internal" href="#windows-mv"><span class="sectnum">1.4.6</span> 移动（类似于Windows中的剪切）mv</a></li>
+<li><a class="reference internal" href="#cat-tac-more-less-head-tail"><span class="sectnum">1.4.7</span> 查看文件内容cat tac more less head tail</a></li>
+<li><a class="reference internal" href="#misc"><span class="sectnum">1.4.8</span> misc</a><ul>
+<li><a class="reference internal" href="#linux-cp"><span class="sectnum">1.4.8.1</span> Linux-cp命令详解</a></li>
+<li><a class="reference internal" href="#xcopy-win-vs-cp-linux"><span class="sectnum">1.4.8.2</span> 拷贝命令比较，XCOPY(win) VS cp(linux)</a></li>
+<li><a class="reference internal" href="#gnumake-wildcard-win-vs-cp-linux"><span class="sectnum">1.4.8.3</span> gnumake-wildcard(win) VS cp(linux)</a></li>
+<li><a class="reference internal" href="#id21"><span class="sectnum">1.4.8.4</span> touch命令直接创建空白文件</a></li>
 </ul>
 </li>
 </ul>
@@ -129,65 +140,77 @@
           <div class="body" role="main">
             
   <div class="section" id="gramma-and-template">
-<h1><a class="toc-backref" href="#id18"><span class="sectnum">1</span> gramma and template</a><a class="headerlink" href="#gramma-and-template" title="永久链接至标题">¶</a></h1>
+<h1><a class="toc-backref" href="#id22"><span class="sectnum">1</span> gramma and template</a><a class="headerlink" href="#gramma-and-template" title="永久链接至标题">¶</a></h1>
 <div class="contents topic" id="contents">
 <p class="topic-title first">contents</p>
 <ul class="auto-toc simple">
-<li><p><a class="reference internal" href="#gramma-and-template" id="id18"><span class="sectnum">1</span> gramma and template</a></p>
+<li><p><a class="reference internal" href="#gramma-and-template" id="id22"><span class="sectnum">1</span> gramma and template</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#id1" id="id19"><span class="sectnum">1.1</span> 网络资源地址</a></p></li>
-<li><p><a class="reference internal" href="#linux" id="id20"><span class="sectnum">1.2</span> Linux命令</a></p>
+<li><p><a class="reference internal" href="#id1" id="id23"><span class="sectnum">1.1</span> 网络资源地址</a></p></li>
+<li><p><a class="reference internal" href="#linux-help" id="id24"><span class="sectnum">1.2</span> Linux命令–help</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#wget" id="id21"><span class="sectnum">1.2.1</span> wget</a></p></li>
-<li><p><a class="reference internal" href="#gsub" id="id22"><span class="sectnum">1.2.2</span> gsub函数</a></p></li>
-<li><p><a class="reference internal" href="#subgsub" id="id23"><span class="sectnum">1.2.3</span> sub和gsub的区别</a></p></li>
-<li><p><a class="reference internal" href="#awk-gawk" id="id24"><span class="sectnum">1.2.4</span> awk gawk</a></p></li>
-<li><p><a class="reference internal" href="#find" id="id25"><span class="sectnum">1.2.5</span> find</a></p>
+<li><p><a class="reference internal" href="#rm" id="id25"><span class="sectnum">1.2.1</span> rm</a></p></li>
+<li><p><a class="reference internal" href="#cp" id="id26"><span class="sectnum">1.2.2</span> cp</a></p></li>
+<li><p><a class="reference internal" href="#touch" id="id27"><span class="sectnum">1.2.3</span> touch</a></p></li>
+<li><p><a class="reference internal" href="#ls" id="id28"><span class="sectnum">1.2.4</span> ls</a></p></li>
+<li><p><a class="reference internal" href="#find" id="id29"><span class="sectnum">1.2.5</span> find</a></p></li>
+<li><p><a class="reference internal" href="#sed" id="id30"><span class="sectnum">1.2.6</span> sed</a></p></li>
+<li><p><a class="reference internal" href="#gawk" id="id31"><span class="sectnum">1.2.7</span> gawk</a></p></li>
+<li><p><a class="reference internal" href="#awk" id="id32"><span class="sectnum">1.2.8</span> awk</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#linux" id="id33"><span class="sectnum">1.3</span> Linux命令</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#id2" id="id26"><span class="sectnum">1.2.5.1</span> 命令选项：</a></p></li>
-<li><p><a class="reference internal" href="#id3" id="id27"><span class="sectnum">1.2.5.2</span> 常用的命令展示</a></p></li>
-<li><p><a class="reference internal" href="#id4" id="id28"><span class="sectnum">1.2.5.3</span> 查找普通文件/目录</a></p></li>
-<li><p><a class="reference internal" href="#id5" id="id29"><span class="sectnum">1.2.5.4</span> 只显示1级目录文件且过滤自身</a></p></li>
-<li><p><a class="reference internal" href="#access" id="id30"><span class="sectnum">1.2.5.5</span> 查找一天内被访问过(access)的文件</a></p></li>
-<li><p><a class="reference internal" href="#inode" id="id31"><span class="sectnum">1.2.5.6</span> 查询inode相同的文件</a></p></li>
-<li><p><a class="reference internal" href="#id6" id="id32"><span class="sectnum">1.2.5.7</span> 除了某个文件以为，其余的均删除</a></p></li>
-<li><p><a class="reference internal" href="#id7" id="id33"><span class="sectnum">1.2.5.8</span> 删除目录下所有文件</a></p></li>
-<li><p><a class="reference internal" href="#id8" id="id34"><span class="sectnum">1.2.5.9</span> 查看当前路径下所有文件的信息：</a></p></li>
-<li><p><a class="reference internal" href="#id9" id="id35"><span class="sectnum">1.2.5.10</span> 查找指定时间内修改过的文件</a></p></li>
-<li><p><a class="reference internal" href="#id10" id="id36"><span class="sectnum">1.2.5.11</span> 按照目录或文件的权限来查找文件</a></p></li>
-<li><p><a class="reference internal" href="#id11" id="id37"><span class="sectnum">1.2.5.12</span> 按大小查找文件</a></p></li>
-<li><p><a class="reference internal" href="#testtest4" id="id38"><span class="sectnum">1.2.5.13</span> 在test目录下查找不在test4子目录之内的所有文件</a></p></li>
-<li><p><a class="reference internal" href="#yum-log-hhh-txt" id="id39"><span class="sectnum">1.2.5.14</span> 查找比yum.log 但不比hhh.txt新的文件</a></p></li>
-<li><p><a class="reference internal" href="#log2012-log" id="id40"><span class="sectnum">1.2.5.15</span> 查找更改时间在比log2012.log文件新的文件</a></p></li>
-<li><p><a class="reference internal" href="#m" id="id41"><span class="sectnum">1.2.5.16</span> 在当前目录下查找文件长度大于1 M字节的文件</a></p></li>
-<li><p><a class="reference internal" href="#home-apache100" id="id42"><span class="sectnum">1.2.5.17</span> 在/home/apache目录下查找文件长度恰好为100字节的文件</a></p></li>
-<li><p><a class="reference internal" href="#id12" id="id43"><span class="sectnum">1.2.5.18</span> 在当前目录下查找长度超过10块的文件</a></p></li>
-<li><p><a class="reference internal" href="#id13" id="id44"><span class="sectnum">1.2.5.19</span> 其他命令：</a></p></li>
-<li><p><a class="reference internal" href="#findexecokprint" id="id45"><span class="sectnum">1.2.5.20</span> find命令之execokprint</a></p></li>
-<li><p><a class="reference internal" href="#n" id="id46"><span class="sectnum">1.2.5.21</span> 在目录中查找更改时间在n日以前的文件并删除它们</a></p></li>
-<li><p><a class="reference internal" href="#id14" id="id47"><span class="sectnum">1.2.5.22</span> 在目录中查找更改时间在n日以前的文件并删除它们，在删除之前先给出提示</a></p></li>
-<li><p><a class="reference internal" href="#execgrep" id="id48"><span class="sectnum">1.2.5.23</span> exec中使用grep命令</a></p></li>
-<li><p><a class="reference internal" href="#id15" id="id49"><span class="sectnum">1.2.5.24</span> 查找文件移动到指定目录</a></p></li>
-<li><p><a class="reference internal" href="#execcp" id="id50"><span class="sectnum">1.2.5.25</span> 用exec选项执行cp命令</a></p></li>
+<li><p><a class="reference internal" href="#wget" id="id34"><span class="sectnum">1.3.1</span> wget</a></p></li>
+<li><p><a class="reference internal" href="#gsub" id="id35"><span class="sectnum">1.3.2</span> gsub函数</a></p></li>
+<li><p><a class="reference internal" href="#subgsub" id="id36"><span class="sectnum">1.3.3</span> sub和gsub的区别</a></p></li>
+<li><p><a class="reference internal" href="#awk-gawk" id="id37"><span class="sectnum">1.3.4</span> awk gawk</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id38"><span class="sectnum">1.3.5</span> find</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id3" id="id39"><span class="sectnum">1.3.5.1</span> 命令选项：</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id40"><span class="sectnum">1.3.5.2</span> 常用的命令展示</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id41"><span class="sectnum">1.3.5.3</span> 查找普通文件/目录</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id42"><span class="sectnum">1.3.5.4</span> 只显示1级目录文件且过滤自身</a></p></li>
+<li><p><a class="reference internal" href="#access" id="id43"><span class="sectnum">1.3.5.5</span> 查找一天内被访问过(access)的文件</a></p></li>
+<li><p><a class="reference internal" href="#inode" id="id44"><span class="sectnum">1.3.5.6</span> 查询inode相同的文件</a></p></li>
+<li><p><a class="reference internal" href="#id7" id="id45"><span class="sectnum">1.3.5.7</span> 除了某个文件以为，其余的均删除</a></p></li>
+<li><p><a class="reference internal" href="#id8" id="id46"><span class="sectnum">1.3.5.8</span> 删除目录下所有文件</a></p></li>
+<li><p><a class="reference internal" href="#id9" id="id47"><span class="sectnum">1.3.5.9</span> 查看当前路径下所有文件的信息：</a></p></li>
+<li><p><a class="reference internal" href="#id10" id="id48"><span class="sectnum">1.3.5.10</span> 查找指定时间内修改过的文件</a></p></li>
+<li><p><a class="reference internal" href="#id11" id="id49"><span class="sectnum">1.3.5.11</span> 按照目录或文件的权限来查找文件</a></p></li>
+<li><p><a class="reference internal" href="#id12" id="id50"><span class="sectnum">1.3.5.12</span> 按大小查找文件</a></p></li>
+<li><p><a class="reference internal" href="#testtest4" id="id51"><span class="sectnum">1.3.5.13</span> 在test目录下查找不在test4子目录之内的所有文件</a></p></li>
+<li><p><a class="reference internal" href="#yum-log-hhh-txt" id="id52"><span class="sectnum">1.3.5.14</span> 查找比yum.log 但不比hhh.txt新的文件</a></p></li>
+<li><p><a class="reference internal" href="#log2012-log" id="id53"><span class="sectnum">1.3.5.15</span> 查找更改时间在比log2012.log文件新的文件</a></p></li>
+<li><p><a class="reference internal" href="#m" id="id54"><span class="sectnum">1.3.5.16</span> 在当前目录下查找文件长度大于1 M字节的文件</a></p></li>
+<li><p><a class="reference internal" href="#home-apache100" id="id55"><span class="sectnum">1.3.5.17</span> 在/home/apache目录下查找文件长度恰好为100字节的文件</a></p></li>
+<li><p><a class="reference internal" href="#id13" id="id56"><span class="sectnum">1.3.5.18</span> 在当前目录下查找长度超过10块的文件</a></p></li>
+<li><p><a class="reference internal" href="#id14" id="id57"><span class="sectnum">1.3.5.19</span> 其他命令：</a></p></li>
+<li><p><a class="reference internal" href="#findexecokprint" id="id58"><span class="sectnum">1.3.5.20</span> find命令之execokprint</a></p></li>
+<li><p><a class="reference internal" href="#n" id="id59"><span class="sectnum">1.3.5.21</span> 在目录中查找更改时间在n日以前的文件并删除它们</a></p></li>
+<li><p><a class="reference internal" href="#id15" id="id60"><span class="sectnum">1.3.5.22</span> 在目录中查找更改时间在n日以前的文件并删除它们，在删除之前先给出提示</a></p></li>
+<li><p><a class="reference internal" href="#execgrep" id="id61"><span class="sectnum">1.3.5.23</span> exec中使用grep命令</a></p></li>
+<li><p><a class="reference internal" href="#id16" id="id62"><span class="sectnum">1.3.5.24</span> 查找文件移动到指定目录</a></p></li>
+<li><p><a class="reference internal" href="#execcp" id="id63"><span class="sectnum">1.3.5.25</span> 用exec选项执行cp命令</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#id16" id="id51"><span class="sectnum">1.3</span> Linux常用命令大全</a></p>
+<li><p><a class="reference internal" href="#id17" id="id64"><span class="sectnum">1.4</span> Linux常用命令大全</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#mkdir" id="id52"><span class="sectnum">1.3.1</span> 创建目录 mkdir</a></p></li>
-<li><p><a class="reference internal" href="#rmdir" id="id53"><span class="sectnum">1.3.2</span> 删除文件 rmdir</a></p></li>
-<li><p><a class="reference internal" href="#touch" id="id54"><span class="sectnum">1.3.3</span> 创建文件 touch</a></p></li>
-<li><p><a class="reference internal" href="#rm" id="id55"><span class="sectnum">1.3.4</span> 删除文件或目录 rm</a></p></li>
-<li><p><a class="reference internal" href="#cp" id="id56"><span class="sectnum">1.3.5</span> 复制文件或目录（可以对目标文件或目录重命名） cp</a></p></li>
-<li><p><a class="reference internal" href="#windows-mv" id="id57"><span class="sectnum">1.3.6</span> 移动（类似于Windows中的剪切）mv</a></p></li>
-<li><p><a class="reference internal" href="#cat-tac-more-less-head-tail" id="id58"><span class="sectnum">1.3.7</span> 查看文件内容cat tac more less head tail</a></p></li>
-<li><p><a class="reference internal" href="#misc" id="id59"><span class="sectnum">1.3.8</span> misc</a></p>
+<li><p><a class="reference internal" href="#mkdir" id="id65"><span class="sectnum">1.4.1</span> 创建目录 mkdir</a></p></li>
+<li><p><a class="reference internal" href="#rmdir" id="id66"><span class="sectnum">1.4.2</span> 删除文件 rmdir</a></p></li>
+<li><p><a class="reference internal" href="#id18" id="id67"><span class="sectnum">1.4.3</span> 创建文件 touch</a></p></li>
+<li><p><a class="reference internal" href="#id19" id="id68"><span class="sectnum">1.4.4</span> 删除文件或目录 rm</a></p></li>
+<li><p><a class="reference internal" href="#id20" id="id69"><span class="sectnum">1.4.5</span> 复制文件或目录（可以对目标文件或目录重命名） cp</a></p></li>
+<li><p><a class="reference internal" href="#windows-mv" id="id70"><span class="sectnum">1.4.6</span> 移动（类似于Windows中的剪切）mv</a></p></li>
+<li><p><a class="reference internal" href="#cat-tac-more-less-head-tail" id="id71"><span class="sectnum">1.4.7</span> 查看文件内容cat tac more less head tail</a></p></li>
+<li><p><a class="reference internal" href="#misc" id="id72"><span class="sectnum">1.4.8</span> misc</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#linux-cp" id="id60"><span class="sectnum">1.3.8.1</span> Linux-cp命令详解</a></p></li>
-<li><p><a class="reference internal" href="#xcopy-win-vs-cp-linux" id="id61"><span class="sectnum">1.3.8.2</span> 拷贝命令比较，XCOPY(win) VS cp(linux)</a></p></li>
-<li><p><a class="reference internal" href="#gnumake-wildcard-win-vs-cp-linux" id="id62"><span class="sectnum">1.3.8.3</span> gnumake-wildcard(win) VS cp(linux)</a></p></li>
-<li><p><a class="reference internal" href="#id17" id="id63"><span class="sectnum">1.3.8.4</span> touch命令直接创建空白文件</a></p></li>
+<li><p><a class="reference internal" href="#linux-cp" id="id73"><span class="sectnum">1.4.8.1</span> Linux-cp命令详解</a></p></li>
+<li><p><a class="reference internal" href="#xcopy-win-vs-cp-linux" id="id74"><span class="sectnum">1.4.8.2</span> 拷贝命令比较，XCOPY(win) VS cp(linux)</a></p></li>
+<li><p><a class="reference internal" href="#gnumake-wildcard-win-vs-cp-linux" id="id75"><span class="sectnum">1.4.8.3</span> gnumake-wildcard(win) VS cp(linux)</a></p></li>
+<li><p><a class="reference internal" href="#id21" id="id76"><span class="sectnum">1.4.8.4</span> touch命令直接创建空白文件</a></p></li>
 </ul>
 </li>
 </ul>
@@ -197,15 +220,484 @@
 </ul>
 </div>
 <div class="section" id="id1">
-<h2><a class="toc-backref" href="#id19"><span class="sectnum">1.1</span> 网络资源地址</a><a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<h2><a class="toc-backref" href="#id23"><span class="sectnum">1.1</span> 网络资源地址</a><a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <p><a class="reference external" href="https://yq.aliyun.com/articles/681643">Linux基础知识——Linux常用命令大全</a></p>
 <p><a class="reference external" href="https://man.linuxde.net/">Linux命令大全</a></p>
 </div>
+<div class="section" id="linux-help">
+<h2><a class="toc-backref" href="#id24"><span class="sectnum">1.2</span> Linux命令–help</a><a class="headerlink" href="#linux-help" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="http://www.gnu.org/software/coreutils/">GNU coreutils online help:</a></p>
+<p><a class="reference external" href="https://www.gnu.org/software/findutils/">GNU findutils</a></p>
+<p><a class="reference external" href="https://www.gnu.org/software/gawk/">GNU gawk</a></p>
+<p><a class="reference external" href="https://www.gnu.org/software/sed/">GNU sed</a></p>
+<p><a class="reference external" href="http://www.maizure.org/projects/decoded-gnu-coreutils/">Decoded: GNU coreutils</a></p>
+<p><a class="reference external" href="http://www.maizure.org/projects/decoded-gnu-coreutils/cp.html">cp</a></p>
+<p><a class="reference external" href="http://www.maizure.org/projects/decoded-gnu-coreutils/touch.html">touch</a></p>
+<p><a class="reference external" href="http://www.maizure.org/projects/decoded-gnu-coreutils/rm.html">rm</a></p>
+<p><a class="reference external" href="http://www.maizure.org/projects/decoded-gnu-coreutils/ls.html">ls</a></p>
+<p><a class="reference external" href="http://www.maizure.org/projects/decoded-gnu-coreutils/mv.html">mv</a></p>
+<p><a class="reference external" href="http://www.maizure.org/projects/decoded-gnu-coreutils/mkdir.html">mkdir</a></p>
+<p><a class="reference external" href="http://www.maizure.org/projects/decoded-gnu-coreutils/cat.html">cat</a></p>
+<p><a class="reference external" href="https://www.gnu.org/software/findutils/manual/html_mono/find.html">GNU find</a></p>
+<p>` &lt;&gt;`__</p>
+<p>` &lt;&gt;`__</p>
+<p>` &lt;&gt;`__</p>
+<p>` &lt;&gt;`__</p>
+<p>` &lt;&gt;`__</p>
+<p>` &lt;&gt;`__</p>
+<p>` &lt;&gt;`__</p>
+<div class="section" id="rm">
+<h3><a class="toc-backref" href="#id25"><span class="sectnum">1.2.1</span> rm</a><a class="headerlink" href="#rm" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ rm --help
+Usage: rm [OPTION]... [FILE]...
+Remove (unlink) the FILE(s).
+  -f, --force           ignore nonexistent files and arguments, never   prompt
+  -i                    prompt before every removal
+  -I                    prompt once before removing more than three   files, or
+                          when removing recursively; less intrusive than   -i,
+                          while still giving protection against most   mistakes
+      --interactive[=WHEN]  prompt according to WHEN: never, once (-I),   or
+                          always (-i); without WHEN, prompt always
+      --one-file-system  when removing a hierarchy recursively, skip any
+                          directory that is on a file system different   from
+                          that of the corresponding command line argument
+      --no-preserve-root  do not treat &#39;/&#39; specially
+      --preserve-root   do not remove &#39;/&#39; (default)
+  -r, -R, --recursive   remove directories and their contents recursively
+  -d, --dir             remove empty directories
+  -v, --verbose         explain what is being done
+      --help     display this help and exit
+      --version  output version information and exit
+By default, rm does not remove directories.  Use the --recursive (-r or   -R)
+option to remove each listed directory, too, along with all of its   contents.
+To remove a file whose name starts with a &#39;-&#39;, for example &#39;-foo&#39;,
+use one of these commands:
+  rm -- -foo
+  rm ./-foo
+Note that if you use rm to remove a file, it might be possible to recover
+some of its contents, given sufficient expertise and/or time.  For   greater
+assurance that the contents are truly unrecoverable, consider using   shred.
+GNU coreutils online help: &lt;http://www.gnu.org/software/coreutils/&gt;
+Full documentation at: &lt;http://www.gnu.org/software/coreutils/rm&gt;
+or available locally via: info &#39;(coreutils) rm invocation&#39;
+The command &quot;rm --help&quot; exited with 0.
+</pre></div>
+</div>
+</div>
+<div class="section" id="cp">
+<h3><a class="toc-backref" href="#id26"><span class="sectnum">1.2.2</span> cp</a><a class="headerlink" href="#cp" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cp --help
+Usage: cp [OPTION]... [-T] SOURCE DEST
+  or:  cp [OPTION]... SOURCE... DIRECTORY
+  or:  cp [OPTION]... -t DIRECTORY SOURCE...
+Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --archive                same as -dR --preserve=all
+      --attributes-only        don&#39;t copy the file data, just the attributes
+      --backup[=CONTROL]       make a backup of each existing destination file
+  -b                           like --backup but does not accept an argument
+      --copy-contents          copy contents of special files when recursive
+  -d                           same as --no-dereference --preserve=links
+  -f, --force                  if an existing destination file cannot be
+                                 opened, remove it and try again (this option
+                                 is ignored when the -n option is also used)
+  -i, --interactive            prompt before overwrite (overrides a previous -n
+                                  option)
+  -H                           follow command-line symbolic links in SOURCE
+  -l, --link                   hard link files instead of copying
+  -L, --dereference            always follow symbolic links in SOURCE
+  -n, --no-clobber             do not overwrite an existing file (overrides
+                                 a previous -i option)
+  -P, --no-dereference         never follow symbolic links in SOURCE
+  -p                           same as --preserve=mode,ownership,timestamps
+      --preserve[=ATTR_LIST]   preserve the specified attributes (default:
+                                 mode,ownership,timestamps), if possible
+                                 additional attributes: context, links, xattr,
+                                 all
+      --no-preserve=ATTR_LIST  don&#39;t preserve the specified attributes
+      --parents                use full source file name under DIRECTORY
+  -R, -r, --recursive          copy directories recursively
+      --reflink[=WHEN]         control clone/CoW copies. See below
+      --remove-destination     remove each existing destination file before
+                                 attempting to open it (contrast with --force)
+      --sparse=WHEN            control creation of sparse files. See below
+      --strip-trailing-slashes  remove any trailing slashes from each SOURCE
+                                 argument
+  -s, --symbolic-link          make symbolic links instead of copying
+  -S, --suffix=SUFFIX          override the usual backup suffix
+  -t, --target-directory=DIRECTORY  copy all SOURCE arguments into DIRECTORY
+  -T, --no-target-directory    treat DEST as a normal file
+  -u, --update                 copy only when the SOURCE file is newer
+                                 than the destination file or when the
+                                 destination file is missing
+  -v, --verbose                explain what is being done
+  -x, --one-file-system        stay on this file system
+  -Z                           set SELinux security context of destination
+                                 file to default type
+      --context[=CTX]          like -Z, or if CTX is specified then set the
+                                 SELinux or SMACK security context to CTX
+      --help     display this help and exit
+      --version  output version information and exit
+By default, sparse SOURCE files are detected by a crude heuristic and the
+corresponding DEST file is made sparse as well.  That is the behavior
+selected by --sparse=auto.  Specify --sparse=always to create a sparse DEST
+file whenever the SOURCE file contains a long enough sequence of zero bytes.
+Use --sparse=never to inhibit creation of sparse files.
+When --reflink[=always] is specified, perform a lightweight copy, where the
+data blocks are copied only when modified.  If this is not possible the copy
+fails, or if --reflink=auto is specified, fall back to a standard copy.
+The backup suffix is &#39;~&#39;, unless set with --suffix or SIMPLE_BACKUP_SUFFIX.
+The version control method may be selected via the --backup option or through
+the VERSION_CONTROL environment variable.  Here are the values:
+  none, off       never make backups (even if --backup is given)
+  numbered, t     make numbered backups
+  existing, nil   numbered if numbered backups exist, simple otherwise
+  simple, never   always make simple backups
+As a special case, cp makes a backup of SOURCE when the force and backup
+options are given and SOURCE and DEST are the same name for an existing,
+regular file.
+GNU coreutils online help: &lt;http://www.gnu.org/software/coreutils/&gt;
+Full documentation at: &lt;http://www.gnu.org/software/coreutils/cp&gt;
+or available locally via: info &#39;(coreutils) cp invocation&#39;
+The command &quot;cp --help&quot; exited with 0.
+0.01s$ \cp -RT $TRAVIS_BUILD_DIR/output/sphinx/build-memo/* /tmp/klgit/gp-memo
+cp: extra operand &#39;/home/travis/build/kevinluolog/kdoc/output/sphinx/build-memo/002plan&#39;
+Try &#39;cp --help&#39; for more information.
+The command &quot;\cp -RT $TRAVIS_BUILD_DIR/output/sphinx/build-memo/* /tmp/klgit/gp-memo&quot; exited with 1.
+0.00s$ pwd
+/tmp/klgit/gp-memo
+
+上面cp命令,错在：
+- 不能用大写T, 这是表示 DEST是文件，不是目录，报错的原因
+更正：
+cp -rt /tmp/klgit/gp-memo $TRAVIS_BUILD_DIR/output/sphinx/build-memo/*
+注意： -rt指定目标目录时要紧跟，所以如果参数写在前面，则目标目录也到前面了。
+source目录后面带星通配和-r配合使用，则表示只copy文件和子目录。
+</pre></div>
+</div>
+</div>
+<div class="section" id="touch">
+<h3><a class="toc-backref" href="#id27"><span class="sectnum">1.2.3</span> touch</a><a class="headerlink" href="#touch" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>0.02s$ touch --help
+Usage: touch [OPTION]... FILE...
+Update the access and modification times of each FILE to the current time.
+A FILE argument that does not exist is created empty, unless -c or -h
+is supplied.
+A FILE argument string of - is handled specially and causes touch to
+change the times of the file associated with standard output.
+Mandatory arguments to long options are mandatory for short options too.
+  -a                     change only the access time
+  -c, --no-create        do not create any files
+  -d, --date=STRING      parse STRING and use it instead of current time
+  -f                     (ignored)
+  -h, --no-dereference   affect each symbolic link instead of any   referenced
+                         file (useful only on systems that can change the
+                         timestamps of a symlink)
+  -m                     change only the modification time
+  -r, --reference=FILE   use this file&#39;s times instead of current time
+  -t STAMP               use [[CC]YY]MMDDhhmm[.ss] instead of current time
+      --time=WORD        change the specified time:
+                           WORD is access, atime, or use: equivalent to -a
+                           WORD is modify or mtime: equivalent to -m
+      --help     display this help and exit
+      --version  output version information and exit
+Note that the -d and -t options accept different time-date formats.
+GNU coreutils online help: &lt;http://www.gnu.org/software/coreutils/&gt;
+Full documentation at: &lt;http://www.gnu.org/software/coreutils/touch&gt;
+or available locally via: info &#39;(coreutils) touch invocation&#39;
+The command &quot;touch --help&quot; exited with 0.
+</pre></div>
+</div>
+</div>
+<div class="section" id="ls">
+<h3><a class="toc-backref" href="#id28"><span class="sectnum">1.2.4</span> ls</a><a class="headerlink" href="#ls" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ls --help
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic   characters
+      --block-size=SIZE      scale sizes by SIZE before printing them;   e.g.,
+                               &#39;--block-size=M&#39; prints sizes in units of
+                               1,048,576 bytes; see SIZE format below
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of   last
+                               modification of file status information);
+                               with -l: show ctime and sort by name;
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output; WHEN can be &#39;always&#39; (  default
+                               if omitted), &#39;auto&#39;, or &#39;never&#39;; more info   below
+  -d, --directory            list directories themselves, not their   contents
+  -D, --dired                generate output designed for Emacs&#39; dired   mode
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=&gt;@|) to entries
+      --file-type            likewise, except do not append &#39;*&#39;
+      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files;
+                               can be augmented with a --sort option, but   any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don&#39;t print group names
+  -h, --human-readable       with -l and/or -s, print human readable sizes
+                               (e.g., 1K 234M 2G)
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command   line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                               that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell   PATTERN
+                               (overridden by -a or -A)
+      --indicator-style=WORD  append indicator with style WORD to entry   names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell   PATTERN
+  -k, --kibibytes            default to 1024-byte blocks for disk usage
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the   link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of   entries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print raw entry names (don&#39;t treat e.g.   control
+                               characters specially)
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of nongraphic characters
+      --show-control-chars   show nongraphic characters as-is (the   default,
+                               unless program is &#39;ls&#39; and output is a   terminal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always,
+                               shell-escape, shell-escape-always, c,   escape
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in   blocks
+  -S                         sort by file size, largest first
+      --sort=WORD            sort by WORD instead of name: none (-U),   size (-S),
+                               time (-t), version (-v), extension (-X)
+      --time=WORD            with -l, show time as WORD instead of default
+                               modification time: atime or access or use   (-u);
+                               ctime or status (-c); also use specified   time
+                               as sort key if --sort=time (newest first)
+      --time-style=STYLE     with -l, show times using style STYLE:
+                               full-iso, long-iso, iso, locale, or   +FORMAT;
+                               FORMAT is interpreted like in &#39;date&#39;; if   FORMAT
+                               is FORMAT1&lt;newline&gt;FORMAT2, then FORMAT1   applies
+                               to non-recent files and FORMAT2 to recent   files;
+                               if STYLE is prefixed with &#39;posix-&#39;, STYLE
+                               takes effect only outside the POSIX locale
+  -t                         sort by modification time, newest first
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name;
+                               otherwise: sort by access time, newest   first
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within text
+  -w, --width=COLS           set output width to COLS.  0 means no limit
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any security context of each file
+  -1                         list one file per line.  Avoid &#39;\n&#39; with -q   or -b
+      --help     display this help and exit
+      --version  output version information and exit
+The SIZE argument is an integer and optional unit (example: 10K is 10*  1024).
+Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+GNU coreutils online help: &lt;http://www.gnu.org/software/coreutils/&gt;
+Full documentation at: &lt;http://www.gnu.org/software/coreutils/ls&gt;
+or available locally via: info &#39;(coreutils) ls invocation&#39;
+The command &quot;ls --help&quot; exited with 0.
+</pre></div>
+</div>
+</div>
+<div class="section" id="find">
+<h3><a class="toc-backref" href="#id29"><span class="sectnum">1.2.5</span> find</a><a class="headerlink" href="#find" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>0.01s$ find --help
+Usage: find [-H] [-L] [-P] [-Olevel] [-D   help|tree|search|stat|rates|opt|exec|time] [path...] [expression]
+default path is the current directory; default expression is -print
+expression may consist of: operators, options, tests, and actions:
+operators (decreasing precedence; -and is implicit where no others are   given):
+      ( EXPR )   ! EXPR   -not EXPR   EXPR1 -a EXPR2   EXPR1 -and EXPR2
+      EXPR1 -o EXPR2   EXPR1 -or EXPR2   EXPR1 , EXPR2
+positional options (always true): -daystart -follow -regextype
+normal options (always true, specified before other expressions):
+      -depth --help -maxdepth LEVELS -mindepth LEVELS -mount -noleaf
+      --version -xdev -ignore_readdir_race -noignore_readdir_race
+tests (N can be +N or -N or N): -amin N -anewer FILE -atime N -cmin N
+      -cnewer FILE -ctime N -empty -false -fstype TYPE -gid N -group NAME
+      -ilname PATTERN -iname PATTERN -inum N -iwholename PATTERN -iregex   PATTERN
+      -links N -lname PATTERN -mmin N -mtime N -name PATTERN -newer FILE
+      -nouser -nogroup -path PATTERN -perm [-/]MODE -regex PATTERN
+      -readable -writable -executable
+      -wholename PATTERN -size N[bcwkMG] -true -type [bcdpflsD] -uid N
+      -used N -user NAME -xtype [bcdpfls]
+      -context CONTEXT
+actions: -delete -print0 -printf FORMAT -fprintf FILE FORMAT -print
+      -fprint0 FILE -fprint FILE -ls -fls FILE -prune -quit
+      -exec COMMAND ; -exec COMMAND {} + -ok COMMAND ;
+      -execdir COMMAND ; -execdir COMMAND {} + -okdir COMMAND ;
+Please see also the documentation at http://www.gnu.org/software/  findutils/.
+You can report (and track progress on fixing) bugs in the &quot;find&quot;
+program via the GNU findutils bug-reporting page at
+https://savannah.gnu.org/bugs/?group=findutils or, if
+you have no web access, by sending email to &lt;bug-findutils@gnu.org&gt;.
+The command &quot;find --help&quot; exited with 0.
+</pre></div>
+</div>
+</div>
+<div class="section" id="sed">
+<h3><a class="toc-backref" href="#id30"><span class="sectnum">1.2.6</span> sed</a><a class="headerlink" href="#sed" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>0.01s$ sed --help
+Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]...
+  -n, --quiet, --silent
+                 suppress automatic printing of pattern space
+  -e script, --expression=script
+                 add the script to the commands to be executed
+  -f script-file, --file=script-file
+                 add the contents of script-file to the commands to be executed
+  --follow-symlinks
+                 follow symlinks when processing in place
+  -i[SUFFIX], --in-place[=SUFFIX]
+                 edit files in place (makes backup if SUFFIX supplied)
+  -l N, --line-length=N
+                 specify the desired line-wrap length for the `l&#39; command
+  --posix
+                 disable all GNU extensions.
+  -r, --regexp-extended
+                 use extended regular expressions in the script.
+  -s, --separate
+                 consider files as separate rather than as a single continuous
+                 long stream.
+  -u, --unbuffered
+                 load minimal amounts of data from the input files and flush
+                 the output buffers more often
+  -z, --null-data
+                 separate lines by NUL characters
+      --help     display this help and exit
+      --version  output version information and exit
+If no -e, --expression, -f, or --file option is given, then the first
+non-option argument is taken as the sed script to interpret.  All
+remaining arguments are names of input files; if no input files are
+specified, then the standard input is read.
+GNU sed home page: &lt;http://www.gnu.org/software/sed/&gt;.
+General help using GNU software: &lt;http://www.gnu.org/gethelp/&gt;.
+E-mail bug reports to: &lt;bug-sed@gnu.org&gt;.
+Be sure to include the word ``sed&#39;&#39; somewhere in the ``Subject:&#39;&#39; field.
+The command &quot;sed --help&quot; exited with 0.
+</pre></div>
+</div>
+</div>
+<div class="section" id="gawk">
+<h3><a class="toc-backref" href="#id31"><span class="sectnum">1.2.7</span> gawk</a><a class="headerlink" href="#gawk" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>0.01s$ gawk --help
+Usage: gawk [POSIX or GNU style options] -f progfile [--] file ...
+Usage: gawk [POSIX or GNU style options] [--] &#39;program&#39; file ...
+POSIX options:    GNU long options: (standard)
+  -f progfile   --file=progfile
+  -F fs     --field-separator=fs
+  -v var=val    --assign=var=val
+Short options:    GNU long options: (extensions)
+  -b      --characters-as-bytes
+  -c      --traditional
+  -C      --copyright
+  -d[file]    --dump-variables[=file]
+  -D[file]    --debug[=file]
+  -e &#39;program-text&#39; --source=&#39;program-text&#39;
+  -E file     --exec=file
+  -g      --gen-pot
+  -h      --help
+  -i includefile    --include=includefile
+  -l library    --load=library
+  -L[fatal|invalid] --lint[=fatal|invalid]
+  -M      --bignum
+  -N      --use-lc-numeric
+  -n      --non-decimal-data
+  -o[file]    --pretty-print[=file]
+  -O      --optimize
+  -p[file]    --profile[=file]
+  -P      --posix
+  -r      --re-interval
+  -S      --sandbox
+  -t      --lint-old
+  -V      --version
+To report bugs, see node `Bugs&#39; in `gawk.info&#39;, which is
+section `Reporting Problems and Bugs&#39; in the printed version.
+gawk is a pattern scanning and processing language.
+By default it reads standard input and writes standard output.
+Examples:
+  gawk &#39;{ sum += $1 }; END { print sum }&#39; file
+  gawk -F: &#39;{ print $1 }&#39; /etc/passwd
+The command &quot;gawk --help&quot; exited with 0.
+</pre></div>
+</div>
+</div>
+<div class="section" id="awk">
+<h3><a class="toc-backref" href="#id32"><span class="sectnum">1.2.8</span> awk</a><a class="headerlink" href="#awk" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ awk --help
+Usage: awk [POSIX or GNU style options] -f progfile [--] file ...
+Usage: awk [POSIX or GNU style options] [--] &#39;program&#39; file ...
+POSIX options:    GNU long options: (standard)
+  -f progfile   --file=progfile
+  -F fs     --field-separator=fs
+  -v var=val    --assign=var=val
+Short options:    GNU long options: (extensions)
+  -b      --characters-as-bytes
+  -c      --traditional
+  -C      --copyright
+  -d[file]    --dump-variables[=file]
+  -D[file]    --debug[=file]
+  -e &#39;program-text&#39; --source=&#39;program-text&#39;
+  -E file     --exec=file
+  -g      --gen-pot
+  -h      --help
+  -i includefile    --include=includefile
+  -l library    --load=library
+  -L[fatal|invalid] --lint[=fatal|invalid]
+  -M      --bignum
+  -N      --use-lc-numeric
+  -n      --non-decimal-data
+  -o[file]    --pretty-print[=file]
+  -O      --optimize
+  -p[file]    --profile[=file]
+  -P      --posix
+  -r      --re-interval
+  -S      --sandbox
+  -t      --lint-old
+  -V      --version
+To report bugs, see node `Bugs&#39; in `gawk.info&#39;, which is
+section `Reporting Problems and Bugs&#39; in the printed version.
+gawk is a pattern scanning and processing language.
+By default it reads standard input and writes standard output.
+Examples:
+  gawk &#39;{ sum += $1 }; END { print sum }&#39; file
+  gawk -F: &#39;{ print $1 }&#39; /etc/passwd
+The command &quot;awk --help&quot; exited with 0.
+</pre></div>
+</div>
+</div>
+</div>
 <div class="section" id="linux">
-<h2><a class="toc-backref" href="#id20"><span class="sectnum">1.2</span> Linux命令</a><a class="headerlink" href="#linux" title="永久链接至标题">¶</a></h2>
+<h2><a class="toc-backref" href="#id33"><span class="sectnum">1.3</span> Linux命令</a><a class="headerlink" href="#linux" title="永久链接至标题">¶</a></h2>
 <p><a class="reference external" href="https://www.cnblogs.com/ftl1012/tag/Linux%E5%91%BD%E4%BB%A4/">Linux命令</a></p>
 <div class="section" id="wget">
-<h3><a class="toc-backref" href="#id21"><span class="sectnum">1.2.1</span> wget</a><a class="headerlink" href="#wget" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id34"><span class="sectnum">1.3.1</span> wget</a><a class="headerlink" href="#wget" title="永久链接至标题">¶</a></h3>
 <p><a class="reference external" href="https://www.cnblogs.com/ftl1012/p/9265699.html">Linux wget命令详解</a></p>
 <p><a class="reference external" href="https://www.cnblogs.com/ftl1012/tag/Linux%E5%91%BD%E4%BB%A4/">Linux命令</a></p>
 <p>wget是一个下载文件的工具，它用在命令行下。</p>
@@ -226,7 +718,7 @@ wget https://github.com/jgm/pandoc/releases/download/1.17.1/pandoc-1.17.1-2-amd6
 </div>
 </div>
 <div class="section" id="gsub">
-<h3><a class="toc-backref" href="#id22"><span class="sectnum">1.2.2</span> gsub函数</a><a class="headerlink" href="#gsub" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id35"><span class="sectnum">1.3.2</span> gsub函数</a><a class="headerlink" href="#gsub" title="永久链接至标题">¶</a></h3>
 <p>gsub函数则使得在所有正则表达式被匹配的时候都发生替换</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>gsub(regular expression, subsitution string, target string);
 简称 gsub（r,s,t)
@@ -234,7 +726,7 @@ wget https://github.com/jgm/pandoc/releases/download/1.17.1/pandoc-1.17.1-2-amd6
 </div>
 </div>
 <div class="section" id="subgsub">
-<h3><a class="toc-backref" href="#id23"><span class="sectnum">1.2.3</span> sub和gsub的区别</a><a class="headerlink" href="#subgsub" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id36"><span class="sectnum">1.3.3</span> sub和gsub的区别</a><a class="headerlink" href="#subgsub" title="永久链接至标题">¶</a></h3>
 <p>sub匹配第一次出现的符合模式的字符串，相当于 sed ‘s//’ 。
 gsub匹配所有的符合模式的字符串，相当于 sed ‘s//g’ 。
 例如：</p>
@@ -260,7 +752,7 @@ $ awk &#39;{ sub(/test/, &quot;mytest&quot;, $1); print }&#39; testfile
 <p>如要在整个文件中进行匹配需要用到gsub</p>
 </div>
 <div class="section" id="awk-gawk">
-<h3><a class="toc-backref" href="#id24"><span class="sectnum">1.2.4</span> awk gawk</a><a class="headerlink" href="#awk-gawk" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id37"><span class="sectnum">1.3.4</span> awk gawk</a><a class="headerlink" href="#awk-gawk" title="永久链接至标题">¶</a></h3>
 <p><a class="reference external" href="https://www.cnblogs.com/ftl1012/p/9250541.html">Linux awk命令详解</a></p>
 <p><a class="reference external" href="https://blog.csdn.net/believexfr/article/details/78010117">linux gawk命令</a></p>
 <p><a class="reference external" href="https://blog.51cto.com/13706064/2176615">LinuxShell编程之gawk详解</a></p>
@@ -325,8 +817,8 @@ $ awk &#39;{ sub(/test/, &quot;mytest&quot;, $1); print }&#39; testfile
 </table>
 <p>各数据字段依据文本行中的字段分隔符确定。gawk读取一行文本时，使用定义的字段分隔符描述各数据字段。gawk的默认字段分隔符是任意空白字符（如制表符或空格符）</p>
 </div>
-<div class="section" id="find">
-<h3><a class="toc-backref" href="#id25"><span class="sectnum">1.2.5</span> find</a><a class="headerlink" href="#find" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id2">
+<h3><a class="toc-backref" href="#id38"><span class="sectnum">1.3.5</span> find</a><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
 <p><a class="reference external" href="https://blog.csdn.net/l_liangkk/article/details/81294260">Linux-find命令详解</a></p>
 <p>在目录结构中搜索文件，并执行指定的操作。Linux下find命令提供了相当多的查找条件，功能很强大</p>
 <p>find命令格式：</p>
@@ -335,8 +827,8 @@ $ awk &#39;{ sub(/test/, &quot;mytest&quot;, $1); print }&#39; testfile
 </div>
 <p>Linux下find命令在目录结构中搜索文件，并执行指定的操作。Linux下find命令提供了相当多的查找条件，功能很强大
 find常见命令参数</p>
-<div class="section" id="id2">
-<h4><a class="toc-backref" href="#id26"><span class="sectnum">1.2.5.1</span> 命令选项：</a><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id3">
+<h4><a class="toc-backref" href="#id39"><span class="sectnum">1.3.5.1</span> 命令选项：</a><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>-name   按照文件名查找文件。
 -perm   按照文件权限来查找文件。
 -user   按照文件属主来查找文件。
@@ -365,58 +857,58 @@ find常见命令参数</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id3">
-<h4><a class="toc-backref" href="#id27"><span class="sectnum">1.2.5.2</span> 常用的命令展示</a><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h4>
-</div>
 <div class="section" id="id4">
-<h4><a class="toc-backref" href="#id28"><span class="sectnum">1.2.5.3</span> 查找普通文件/目录</a><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h4>
+<h4><a class="toc-backref" href="#id40"><span class="sectnum">1.3.5.2</span> 常用的命令展示</a><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h4>
+</div>
+<div class="section" id="id5">
+<h4><a class="toc-backref" href="#id41"><span class="sectnum">1.3.5.3</span> 查找普通文件/目录</a><a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">find</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">omd</span> <span class="o">-</span><span class="nb">type</span> <span class="n">f</span>  <span class="p">(</span><span class="n">普通文件</span><span class="p">)</span>
 <span class="n">find</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">omd</span> <span class="o">-</span><span class="nb">type</span> <span class="n">d</span>  <span class="p">(</span><span class="n">查询目录</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id5">
-<h4><a class="toc-backref" href="#id29"><span class="sectnum">1.2.5.4</span> 只显示1级目录文件且过滤自身</a><a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id6">
+<h4><a class="toc-backref" href="#id42"><span class="sectnum">1.3.5.4</span> 只显示1级目录文件且过滤自身</a><a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>find ./ -maxdepth 1  -type d  ! -name &quot;hhh&quot;
 </pre></div>
 </div>
 </div>
 <div class="section" id="access">
-<h4><a class="toc-backref" href="#id30"><span class="sectnum">1.2.5.5</span> 查找一天内被访问过(access)的文件</a><a class="headerlink" href="#access" title="永久链接至标题">¶</a></h4>
+<h4><a class="toc-backref" href="#id43"><span class="sectnum">1.3.5.5</span> 查找一天内被访问过(access)的文件</a><a class="headerlink" href="#access" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">find</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">omd</span><span class="o">/</span> <span class="o">-</span><span class="n">atime</span> <span class="o">-</span><span class="mi">1</span> <span class="o">-</span><span class="nb">type</span> <span class="n">f</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="inode">
-<h4><a class="toc-backref" href="#id31"><span class="sectnum">1.2.5.6</span> 查询inode相同的文件</a><a class="headerlink" href="#inode" title="永久链接至标题">¶</a></h4>
+<h4><a class="toc-backref" href="#id44"><span class="sectnum">1.3.5.6</span> 查询inode相同的文件</a><a class="headerlink" href="#inode" title="永久链接至标题">¶</a></h4>
 <dl class="simple">
 <dt>::</dt><dd><p>find / -inum inode数字</p>
 </dd>
 </dl>
 </div>
-<div class="section" id="id6">
-<h4><a class="toc-backref" href="#id32"><span class="sectnum">1.2.5.7</span> 除了某个文件以为，其余的均删除</a><a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id7">
+<h4><a class="toc-backref" href="#id45"><span class="sectnum">1.3.5.7</span> 除了某个文件以为，其余的均删除</a><a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>find /home/omd/ -type f ! -name h.txt  | xargs  rm –f
 ls | grep -v &quot;h.txt&quot; |xargs rm -rf (与上面类似，删除除了某个文件外的所有文件)
 </pre></div>
 </div>
 </div>
-<div class="section" id="id7">
-<h4><a class="toc-backref" href="#id33"><span class="sectnum">1.2.5.8</span> 删除目录下所有文件</a><a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id8">
+<h4><a class="toc-backref" href="#id46"><span class="sectnum">1.3.5.8</span> 删除目录下所有文件</a><a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">find</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span> <span class="o">-</span><span class="nb">type</span> <span class="n">f</span> <span class="o">-</span><span class="n">exec</span> <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="p">{}</span> \<span class="p">;</span>
 <span class="n">find</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span> <span class="o">-</span><span class="nb">type</span> <span class="n">f</span> <span class="o">|</span> <span class="n">xargs</span> <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id8">
-<h4><a class="toc-backref" href="#id34"><span class="sectnum">1.2.5.9</span> 查看当前路径下所有文件的信息：</a><a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id9">
+<h4><a class="toc-backref" href="#id47"><span class="sectnum">1.3.5.9</span> 查看当前路径下所有文件的信息：</a><a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>find /tmp/ -type f ! -name a |xargs rm –rf
 find ./ -type f -exec file {} \;
 </pre></div>
 </div>
 </div>
-<div class="section" id="id9">
-<h4><a class="toc-backref" href="#id35"><span class="sectnum">1.2.5.10</span> 查找指定时间内修改过的文件</a><a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id10">
+<h4><a class="toc-backref" href="#id48"><span class="sectnum">1.3.5.10</span> 查找指定时间内修改过的文件</a><a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># 当前路径下访问文件超过2分钟文件
 find ./ -amin +2
 # 当前路径下访问文件刚好2分钟的文件
@@ -434,14 +926,14 @@ find / -mtime  -7   修改文件为7天之内的
 </pre></div>
 </div>
 </div>
-<div class="section" id="id10">
-<h4><a class="toc-backref" href="#id36"><span class="sectnum">1.2.5.11</span> 按照目录或文件的权限来查找文件</a><a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id11">
+<h4><a class="toc-backref" href="#id49"><span class="sectnum">1.3.5.11</span> 按照目录或文件的权限来查找文件</a><a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">find</span> <span class="o">/</span><span class="n">opt</span> <span class="o">-</span><span class="n">perm</span> <span class="mi">777</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id11">
-<h4><a class="toc-backref" href="#id37"><span class="sectnum">1.2.5.12</span> 按大小查找文件</a><a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id12">
+<h4><a class="toc-backref" href="#id50"><span class="sectnum">1.3.5.12</span> 按大小查找文件</a><a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>find / -size +10M  |sort 【查找大于10M的文件】
 find / -size -10M  |sort 【查找小于10M的文件】
 find / -size 10M   |sort  【查找10M的文件】
@@ -449,45 +941,45 @@ find / -size 10M   |sort  【查找10M的文件】
 </div>
 </div>
 <div class="section" id="testtest4">
-<h4><a class="toc-backref" href="#id38"><span class="sectnum">1.2.5.13</span> 在test目录下查找不在test4子目录之内的所有文件</a><a class="headerlink" href="#testtest4" title="永久链接至标题">¶</a></h4>
+<h4><a class="toc-backref" href="#id51"><span class="sectnum">1.3.5.13</span> 在test目录下查找不在test4子目录之内的所有文件</a><a class="headerlink" href="#testtest4" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>find ./test -path &quot;test/test4&quot; -prune -o -print
 【可以使用-prune选项来指出需要忽略的目录。在使用-prune选项时要当心，因为如果你同时使用了-depth选项，那么-prune选项就会被find命令忽略】
 </pre></div>
 </div>
 </div>
 <div class="section" id="yum-log-hhh-txt">
-<h4><a class="toc-backref" href="#id39"><span class="sectnum">1.2.5.14</span> 查找比yum.log 但不比hhh.txt新的文件</a><a class="headerlink" href="#yum-log-hhh-txt" title="永久链接至标题">¶</a></h4>
+<h4><a class="toc-backref" href="#id52"><span class="sectnum">1.3.5.14</span> 查找比yum.log 但不比hhh.txt新的文件</a><a class="headerlink" href="#yum-log-hhh-txt" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">root</span><span class="nd">@localhost</span> <span class="n">ftl</span><span class="p">]</span><span class="c1"># find / newer /var/log/yum.log ! -newer ./hhh.txt</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="log2012-log">
-<h4><a class="toc-backref" href="#id40"><span class="sectnum">1.2.5.15</span> 查找更改时间在比log2012.log文件新的文件</a><a class="headerlink" href="#log2012-log" title="永久链接至标题">¶</a></h4>
+<h4><a class="toc-backref" href="#id53"><span class="sectnum">1.3.5.15</span> 查找更改时间在比log2012.log文件新的文件</a><a class="headerlink" href="#log2012-log" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">find</span> <span class="o">./</span> <span class="o">-</span><span class="n">newer</span> <span class="n">log2012</span><span class="o">.</span><span class="n">log</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="m">
-<h4><a class="toc-backref" href="#id41"><span class="sectnum">1.2.5.16</span> 在当前目录下查找文件长度大于1 M字节的文件</a><a class="headerlink" href="#m" title="永久链接至标题">¶</a></h4>
+<h4><a class="toc-backref" href="#id54"><span class="sectnum">1.3.5.16</span> 在当前目录下查找文件长度大于1 M字节的文件</a><a class="headerlink" href="#m" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>find ./ -size +1000000c –print
 find ./ –size +1M -print
 </pre></div>
 </div>
 </div>
 <div class="section" id="home-apache100">
-<h4><a class="toc-backref" href="#id42"><span class="sectnum">1.2.5.17</span> 在/home/apache目录下查找文件长度恰好为100字节的文件</a><a class="headerlink" href="#home-apache100" title="永久链接至标题">¶</a></h4>
+<h4><a class="toc-backref" href="#id55"><span class="sectnum">1.3.5.17</span> 在/home/apache目录下查找文件长度恰好为100字节的文件</a><a class="headerlink" href="#home-apache100" title="永久链接至标题">¶</a></h4>
 <blockquote>
 <div><p>find /home/apache -size 100c -print</p>
 </div></blockquote>
 </div>
-<div class="section" id="id12">
-<h4><a class="toc-backref" href="#id43"><span class="sectnum">1.2.5.18</span> 在当前目录下查找长度超过10块的文件</a><a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id13">
+<h4><a class="toc-backref" href="#id56"><span class="sectnum">1.3.5.18</span> 在当前目录下查找长度超过10块的文件</a><a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>find . -size 10 –print
 </pre></div>
 </div>
 </div>
-<div class="section" id="id13">
-<h4><a class="toc-backref" href="#id44"><span class="sectnum">1.2.5.19</span> 其他命令：</a><a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id14">
+<h4><a class="toc-backref" href="#id57"><span class="sectnum">1.3.5.19</span> 其他命令：</a><a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>find /home/omd/ -name *.txt | while read line; do cp $line /home/omd/h;done
 for name in `chkconfig | grep 3:on |awk &#39;{print $1}&#39;` ; do echo $name &gt;&gt; h.txt; done;
 find /home/omd/ -name *.txt | xargs -i cp {} /home/omd/h
@@ -499,49 +991,49 @@ find . -name  &quot;*.txt&quot; |xargs   sed -i &#39;s/hhhh/\hHHh/g&#39;
 </div>
 </div>
 <div class="section" id="findexecokprint">
-<h4><a class="toc-backref" href="#id45"><span class="sectnum">1.2.5.20</span> find命令之execokprint</a><a class="headerlink" href="#findexecokprint" title="永久链接至标题">¶</a></h4>
+<h4><a class="toc-backref" href="#id58"><span class="sectnum">1.3.5.20</span> find命令之execokprint</a><a class="headerlink" href="#findexecokprint" title="永久链接至标题">¶</a></h4>
 <p>ls -l命令放在find命令的-exec选项中</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>find . -type f -exec ls -l {} \; 【{}   花括号代表前面find查找出来的文件名】
 </pre></div>
 </div>
 </div>
 <div class="section" id="n">
-<h4><a class="toc-backref" href="#id46"><span class="sectnum">1.2.5.21</span> 在目录中查找更改时间在n日以前的文件并删除它们</a><a class="headerlink" href="#n" title="永久链接至标题">¶</a></h4>
+<h4><a class="toc-backref" href="#id59"><span class="sectnum">1.3.5.21</span> 在目录中查找更改时间在n日以前的文件并删除它们</a><a class="headerlink" href="#n" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">find</span> <span class="o">./</span> <span class="o">-</span><span class="n">mtime</span> <span class="o">+</span><span class="mi">10</span> <span class="o">-</span><span class="n">exec</span> <span class="n">rm</span> <span class="p">{}</span> \<span class="p">;</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id14">
-<h4><a class="toc-backref" href="#id47"><span class="sectnum">1.2.5.22</span> 在目录中查找更改时间在n日以前的文件并删除它们，在删除之前先给出提示</a><a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id15">
+<h4><a class="toc-backref" href="#id60"><span class="sectnum">1.3.5.22</span> 在目录中查找更改时间在n日以前的文件并删除它们，在删除之前先给出提示</a><a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>find / -mtime +1 -a -name &quot;*.log&quot; -type f -ok cp {} /tmp/ftl \; 【-ok是安全模式，根exec效果同】
 </pre></div>
 </div>
 </div>
 <div class="section" id="execgrep">
-<h4><a class="toc-backref" href="#id48"><span class="sectnum">1.2.5.23</span> exec中使用grep命令</a><a class="headerlink" href="#execgrep" title="永久链接至标题">¶</a></h4>
+<h4><a class="toc-backref" href="#id61"><span class="sectnum">1.3.5.23</span> exec中使用grep命令</a><a class="headerlink" href="#execgrep" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>find /etc -name &quot;passwd*&quot; -exec grep &quot;root&quot; {} \; 【过滤文件内容用】
 </pre></div>
 </div>
 </div>
-<div class="section" id="id15">
-<h4><a class="toc-backref" href="#id49"><span class="sectnum">1.2.5.24</span> 查找文件移动到指定目录</a><a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id16">
+<h4><a class="toc-backref" href="#id62"><span class="sectnum">1.3.5.24</span> 查找文件移动到指定目录</a><a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">find</span> <span class="o">.</span> <span class="o">-</span><span class="n">name</span> <span class="s2">&quot;*.log&quot;</span> <span class="o">-</span><span class="n">exec</span> <span class="n">mv</span> <span class="p">{}</span> <span class="o">..</span> \<span class="p">;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="execcp">
-<h4><a class="toc-backref" href="#id50"><span class="sectnum">1.2.5.25</span> 用exec选项执行cp命令</a><a class="headerlink" href="#execcp" title="永久链接至标题">¶</a></h4>
+<h4><a class="toc-backref" href="#id63"><span class="sectnum">1.3.5.25</span> 用exec选项执行cp命令</a><a class="headerlink" href="#execcp" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">find</span> <span class="o">.</span> <span class="o">-</span><span class="n">name</span> <span class="s2">&quot;*.log&quot;</span> <span class="o">-</span><span class="n">exec</span> <span class="n">cp</span> <span class="p">{}</span> <span class="n">test3</span> \<span class="p">;</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="section" id="id16">
-<h2><a class="toc-backref" href="#id51"><span class="sectnum">1.3</span> Linux常用命令大全</a><a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id17">
+<h2><a class="toc-backref" href="#id64"><span class="sectnum">1.4</span> Linux常用命令大全</a><a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h2>
 <p><a class="reference external" href="https://yq.aliyun.com/articles/681643">Linux基础知识——Linux常用命令大全</a></p>
 <div class="section" id="mkdir">
-<h3><a class="toc-backref" href="#id52"><span class="sectnum">1.3.1</span> 创建目录 mkdir</a><a class="headerlink" href="#mkdir" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id65"><span class="sectnum">1.4.1</span> 创建目录 mkdir</a><a class="headerlink" href="#mkdir" title="永久链接至标题">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>作用：在当前目录下创建下一级目录，无法跨级创建
 
 常用参数
@@ -551,19 +1043,19 @@ find . -name  &quot;*.txt&quot; |xargs   sed -i &#39;s/hhhh/\hHHh/g&#39;
 </div>
 </div>
 <div class="section" id="rmdir">
-<h3><a class="toc-backref" href="#id53"><span class="sectnum">1.3.2</span> 删除文件 rmdir</a><a class="headerlink" href="#rmdir" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id66"><span class="sectnum">1.4.2</span> 删除文件 rmdir</a><a class="headerlink" href="#rmdir" title="永久链接至标题">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>仅可以删除空白目录（不可以删除包含内容的目录）
 </pre></div>
 </div>
 </div>
-<div class="section" id="touch">
-<h3><a class="toc-backref" href="#id54"><span class="sectnum">1.3.3</span> 创建文件 touch</a><a class="headerlink" href="#touch" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id18">
+<h3><a class="toc-backref" href="#id67"><span class="sectnum">1.4.3</span> 创建文件 touch</a><a class="headerlink" href="#id18" title="永久链接至标题">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>作用：创建空白文件
 </pre></div>
 </div>
 </div>
-<div class="section" id="rm">
-<h3><a class="toc-backref" href="#id55"><span class="sectnum">1.3.4</span> 删除文件或目录 rm</a><a class="headerlink" href="#rm" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id19">
+<h3><a class="toc-backref" href="#id68"><span class="sectnum">1.4.4</span> 删除文件或目录 rm</a><a class="headerlink" href="#id19" title="永久链接至标题">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>1、删除文件
 rm 文件名（删除时会询问是否删除）
 rm -f 文件名（强制删除）
@@ -593,8 +1085,8 @@ rm -f 文件名
 </pre></div>
 </div>
 </div>
-<div class="section" id="cp">
-<h3><a class="toc-backref" href="#id56"><span class="sectnum">1.3.5</span> 复制文件或目录（可以对目标文件或目录重命名） cp</a><a class="headerlink" href="#cp" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id20">
+<h3><a class="toc-backref" href="#id69"><span class="sectnum">1.4.5</span> 复制文件或目录（可以对目标文件或目录重命名） cp</a><a class="headerlink" href="#id20" title="永久链接至标题">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>源文件始终不变，仅仅是对目标文件进行改变。
 
 1、复制文件
@@ -606,7 +1098,7 @@ rm -f 文件名
 </div>
 </div>
 <div class="section" id="windows-mv">
-<h3><a class="toc-backref" href="#id57"><span class="sectnum">1.3.6</span> 移动（类似于Windows中的剪切）mv</a><a class="headerlink" href="#windows-mv" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id70"><span class="sectnum">1.4.6</span> 移动（类似于Windows中的剪切）mv</a><a class="headerlink" href="#windows-mv" title="永久链接至标题">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>注意与复制命令cp的区别。mv命令使源文件的状态发生改变。
 
 1、移动目录时：
@@ -615,12 +1107,12 @@ rm -f 文件名
 </div>
 </div>
 <div class="section" id="cat-tac-more-less-head-tail">
-<h3><a class="toc-backref" href="#id58"><span class="sectnum">1.3.7</span> 查看文件内容cat tac more less head tail</a><a class="headerlink" href="#cat-tac-more-less-head-tail" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id71"><span class="sectnum">1.4.7</span> 查看文件内容cat tac more less head tail</a><a class="headerlink" href="#cat-tac-more-less-head-tail" title="永久链接至标题">¶</a></h3>
 </div>
 <div class="section" id="misc">
-<h3><a class="toc-backref" href="#id59"><span class="sectnum">1.3.8</span> misc</a><a class="headerlink" href="#misc" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id72"><span class="sectnum">1.4.8</span> misc</a><a class="headerlink" href="#misc" title="永久链接至标题">¶</a></h3>
 <div class="section" id="linux-cp">
-<h4><a class="toc-backref" href="#id60"><span class="sectnum">1.3.8.1</span> Linux-cp命令详解</a><a class="headerlink" href="#linux-cp" title="永久链接至标题">¶</a></h4>
+<h4><a class="toc-backref" href="#id73"><span class="sectnum">1.4.8.1</span> Linux-cp命令详解</a><a class="headerlink" href="#linux-cp" title="永久链接至标题">¶</a></h4>
 <p><a class="reference external" href="https://www.linuxidc.com/Linux/2019-08/159913.htm">Linux-cp命令详解</a></p>
 <p>默认情况下，如果目标文件存在，它将被覆盖。-n 选项告诉 cp 不要覆盖现有文件。要提示确认，请使用该 -i 选项。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cp</span> <span class="o">-</span><span class="n">i</span> <span class="n">file</span><span class="o">.</span><span class="n">txt</span> <span class="n">file_backup</span><span class="o">.</span><span class="n">txt</span>
@@ -637,30 +1129,30 @@ rm -f 文件名
 </div>
 <p>使用 cp 命令复制目录
 要复制目录(包括其所有文件和子目录)，请使用 -R 或 -r 选项。在以下示例中，我们将目录复制 Pictures 到 Pictures_backup ：</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cp</span> <span class="o">-</span><span class="n">R</span> <span class="n">Pictures</span> <span class="n">Pictures_backup</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cp</span> <span class="o">-</span><span class="n">R</span> <span class="n">源目录</span> <span class="n">目标目录</span>
 </pre></div>
 </div>
-<p>要仅复制文件和子目录，而不复制目标目录，请使用以下 -T 选项：</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cp</span> <span class="o">-</span><span class="n">RT</span> <span class="n">Pictures</span> <span class="n">Pictures_backup</span>
+<p>要仅复制文件和子目录，而不复制目标目录，请使用以下 -t 选项 (原版有错，不能用-T)：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cp</span> <span class="o">-</span><span class="n">Rt</span> <span class="n">目标目录</span> <span class="n">源目录</span>
 </pre></div>
 </div>
 <p>另一种只复制目录内容而不是目录本身的方法是使用通配符 (*) 。以下命令的缺点是它不会复制隐藏文件和目录(以点 . 开头的文件和目录) ：</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cp</span> <span class="o">-</span><span class="n">RT</span> <span class="n">Pictures</span><span class="o">/*</span> <span class="n">Pictures_backup</span><span class="o">/</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cp</span> <span class="o">-</span><span class="n">Rt</span> <span class="n">目标目录</span> <span class="n">源目录</span><span class="o">/*</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="xcopy-win-vs-cp-linux">
-<h4><a class="toc-backref" href="#id61"><span class="sectnum">1.3.8.2</span> 拷贝命令比较，XCOPY(win) VS cp(linux)</a><a class="headerlink" href="#xcopy-win-vs-cp-linux" title="永久链接至标题">¶</a></h4>
+<h4><a class="toc-backref" href="#id74"><span class="sectnum">1.4.8.2</span> 拷贝命令比较，XCOPY(win) VS cp(linux)</a><a class="headerlink" href="#xcopy-win-vs-cp-linux" title="永久链接至标题">¶</a></h4>
 <p>windows下XCOPY命令，目标目录的父目录可以不存在，命令自己会创建</p>
 <p>Linux下cp不会自动创建目标目录的父目录，如果目标目录不在在会直接报错。</p>
 </div>
 <div class="section" id="gnumake-wildcard-win-vs-cp-linux">
-<h4><a class="toc-backref" href="#id62"><span class="sectnum">1.3.8.3</span> gnumake-wildcard(win) VS cp(linux)</a><a class="headerlink" href="#gnumake-wildcard-win-vs-cp-linux" title="永久链接至标题">¶</a></h4>
+<h4><a class="toc-backref" href="#id75"><span class="sectnum">1.4.8.3</span> gnumake-wildcard(win) VS cp(linux)</a><a class="headerlink" href="#gnumake-wildcard-win-vs-cp-linux" title="永久链接至标题">¶</a></h4>
 <p>windows 下gnumake命令wildcard返回匹配文件名带目录（待确认）</p>
 <p>Linux 下gnumake命令wildcard返回匹配文件名带目录（已确认）</p>
 </div>
-<div class="section" id="id17">
-<h4><a class="toc-backref" href="#id63"><span class="sectnum">1.3.8.4</span> touch命令直接创建空白文件</a><a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id21">
+<h4><a class="toc-backref" href="#id76"><span class="sectnum">1.4.8.4</span> touch命令直接创建空白文件</a><a class="headerlink" href="#id21" title="永久链接至标题">¶</a></h4>
 <p>touch test.txt</p>
 <p>命令为：“touch [选项] [文件]”。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>-a   只更改访问时间
