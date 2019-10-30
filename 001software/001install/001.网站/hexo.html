@@ -1062,17 +1062,16 @@ hexo.on(&#39;generateBefore&#39;, function () {
 </div>
 </li>
 <li><p>页面文件</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{%- if theme.kl_click_hanzi %}
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>KL+TEST
+{%- if theme.kl_click_hanzi %}
       &lt;script src=&quot;//lib.baomitu.com/jquery/3.4.0/jquery.min.js&quot;&gt;&lt;/script&gt;
       &lt;!-- 页面点击汉字 --&gt;
       &lt;script type=&quot;text/javascript&quot; src=&quot;/js/hanzi.js&quot;&gt;&lt;/script&gt;
 {%- endif %}
-
 {%- if theme.kl_click_love %}
       &lt;!-- 页面点击小红心 --&gt;
       &lt;script type=&quot;text/javascript&quot; src=&quot;/js/clicklove.js&quot;&gt;&lt;/script&gt;
 {%- endif %}
-
 &lt;/body&gt;
 </pre></div>
 </div>
@@ -1082,7 +1081,6 @@ hexo.on(&#39;generateBefore&#39;, function () {
       &lt;!-- 页面点击汉字 --&gt;
       {{- next_js(&#39;hanzi.js&#39;) }}
 {%- endif %}
-
 {%- if theme.kl_click_love %}
       &lt;!-- 页面点击小红心 --&gt;
       {{- next_js(&#39;clicklove.js&#39;) }}
