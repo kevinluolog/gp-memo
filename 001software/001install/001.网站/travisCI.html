@@ -58,13 +58,15 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#id3"><span class="sectnum">1.3</span> travis CI 问题集锦</a><ul>
-<li><a class="reference internal" href="#travis-ci-env-vs"><span class="sectnum">1.3.1</span> travis CI环境变量 设置,env: -单行 VS 多行</a></li>
-<li><a class="reference internal" href="#linux-makefile-vs-makefile"><span class="sectnum">1.3.2</span> linux上文件名大小写敏感，包括后缀名。Makefile VS makefile</a></li>
-<li><a class="reference internal" href="#cp-mkdir-p"><span class="sectnum">1.3.3</span> cp目标目录不存在，先mkdir -p</a></li>
-<li><a class="reference internal" href="#gnumake-filegbk-file-iconv"><span class="sectnum">1.3.4</span> gnumake-file写文件命令输出GBK码，$(file, 需iconv转换</a></li>
-<li><a class="reference internal" href="#iconv-gbk-utf8"><span class="sectnum">1.3.5</span> iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</a></li>
-<li><a class="reference internal" href="#id4"><span class="sectnum">1.3.6</span> 真正原因：iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</a></li>
-<li><a class="reference internal" href="#misc-raw-materials"><span class="sectnum">1.3.7</span> misc - raw materials</a></li>
+<li><a class="reference internal" href="#kdoc"><span class="sectnum">1.3.1</span> KDOC:</a><ul>
+<li><a class="reference internal" href="#travis-ci-env-vs"><span class="sectnum">1.3.1.1</span> travis CI环境变量 设置,env: -单行 VS 多行</a></li>
+<li><a class="reference internal" href="#linux-makefile-vs-makefile"><span class="sectnum">1.3.1.2</span> linux上文件名大小写敏感，包括后缀名。Makefile VS makefile</a></li>
+<li><a class="reference internal" href="#cp-mkdir-p"><span class="sectnum">1.3.1.3</span> cp目标目录不存在，先mkdir -p</a></li>
+<li><a class="reference internal" href="#gnumake-filegbk-file-iconv"><span class="sectnum">1.3.1.4</span> gnumake-file写文件命令输出GBK码，$(file, 需iconv转换</a></li>
+<li><a class="reference internal" href="#iconv-gbk-utf8"><span class="sectnum">1.3.1.5</span> iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</a></li>
+<li><a class="reference internal" href="#id4"><span class="sectnum">1.3.1.6</span> 真正原因：iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -96,33 +98,36 @@
           <div class="body" role="main">
             
   <div class="section" id="travis-ci">
-<h1><a class="toc-backref" href="#id9"><span class="sectnum">1</span> travis CI</a><a class="headerlink" href="#travis-ci" title="永久链接至标题">¶</a></h1>
+<h1><a class="toc-backref" href="#id5"><span class="sectnum">1</span> travis CI</a><a class="headerlink" href="#travis-ci" title="永久链接至标题">¶</a></h1>
 <div class="contents topic" id="contents">
 <p class="topic-title first">contents</p>
 <ul class="auto-toc simple">
-<li><p><a class="reference internal" href="#travis-ci" id="id9"><span class="sectnum">1</span> travis CI</a></p>
+<li><p><a class="reference internal" href="#travis-ci" id="id5"><span class="sectnum">1</span> travis CI</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#install" id="id10"><span class="sectnum">1.1</span> install</a></p>
+<li><p><a class="reference internal" href="#install" id="id6"><span class="sectnum">1.1</span> install</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#id1" id="id11"><span class="sectnum">1.1.1</span> 教程链接</a></p></li>
+<li><p><a class="reference internal" href="#id1" id="id7"><span class="sectnum">1.1.1</span> 教程链接</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#id2" id="id12"><span class="sectnum">1.2</span> 案例</a></p>
+<li><p><a class="reference internal" href="#id2" id="id8"><span class="sectnum">1.2</span> 案例</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#gcc-c" id="id13"><span class="sectnum">1.2.1</span> gcc c</a></p></li>
-<li><p><a class="reference internal" href="#official-deploy-spec" id="id14"><span class="sectnum">1.2.2</span> official deploy spec</a></p></li>
-<li><p><a class="reference internal" href="#official-notification-spec" id="id15"><span class="sectnum">1.2.3</span> official notification spec</a></p></li>
+<li><p><a class="reference internal" href="#gcc-c" id="id9"><span class="sectnum">1.2.1</span> gcc c</a></p></li>
+<li><p><a class="reference internal" href="#official-deploy-spec" id="id10"><span class="sectnum">1.2.2</span> official deploy spec</a></p></li>
+<li><p><a class="reference internal" href="#official-notification-spec" id="id11"><span class="sectnum">1.2.3</span> official notification spec</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#id3" id="id16"><span class="sectnum">1.3</span> travis CI 问题集锦</a></p>
+<li><p><a class="reference internal" href="#id3" id="id12"><span class="sectnum">1.3</span> travis CI 问题集锦</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#travis-ci-env-vs" id="id17"><span class="sectnum">1.3.1</span> travis CI环境变量 设置,env: -单行 VS 多行</a></p></li>
-<li><p><a class="reference internal" href="#linux-makefile-vs-makefile" id="id18"><span class="sectnum">1.3.2</span> linux上文件名大小写敏感，包括后缀名。Makefile VS makefile</a></p></li>
-<li><p><a class="reference internal" href="#cp-mkdir-p" id="id19"><span class="sectnum">1.3.3</span> cp目标目录不存在，先mkdir -p</a></p></li>
-<li><p><a class="reference internal" href="#gnumake-filegbk-file-iconv" id="id20"><span class="sectnum">1.3.4</span> gnumake-file写文件命令输出GBK码，$(file, 需iconv转换</a></p></li>
-<li><p><a class="reference internal" href="#iconv-gbk-utf8" id="id21"><span class="sectnum">1.3.5</span> iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</a></p></li>
-<li><p><a class="reference internal" href="#id4" id="id22"><span class="sectnum">1.3.6</span> 真正原因：iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</a></p></li>
-<li><p><a class="reference internal" href="#misc-raw-materials" id="id23"><span class="sectnum">1.3.7</span> misc - raw materials</a></p></li>
+<li><p><a class="reference internal" href="#kdoc" id="id13"><span class="sectnum">1.3.1</span> KDOC:</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#travis-ci-env-vs" id="id14"><span class="sectnum">1.3.1.1</span> travis CI环境变量 设置,env: -单行 VS 多行</a></p></li>
+<li><p><a class="reference internal" href="#linux-makefile-vs-makefile" id="id15"><span class="sectnum">1.3.1.2</span> linux上文件名大小写敏感，包括后缀名。Makefile VS makefile</a></p></li>
+<li><p><a class="reference internal" href="#cp-mkdir-p" id="id16"><span class="sectnum">1.3.1.3</span> cp目标目录不存在，先mkdir -p</a></p></li>
+<li><p><a class="reference internal" href="#gnumake-filegbk-file-iconv" id="id17"><span class="sectnum">1.3.1.4</span> gnumake-file写文件命令输出GBK码，$(file, 需iconv转换</a></p></li>
+<li><p><a class="reference internal" href="#iconv-gbk-utf8" id="id18"><span class="sectnum">1.3.1.5</span> iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id19"><span class="sectnum">1.3.1.6</span> 真正原因：iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</a></p></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -130,10 +135,10 @@
 </ul>
 </div>
 <div class="section" id="install">
-<h2><a class="toc-backref" href="#id10"><span class="sectnum">1.1</span> install</a><a class="headerlink" href="#install" title="永久链接至标题">¶</a></h2>
+<h2><a class="toc-backref" href="#id6"><span class="sectnum">1.1</span> install</a><a class="headerlink" href="#install" title="永久链接至标题">¶</a></h2>
 <p><a class="reference external" href="https://travis-ci.com">travis website</a></p>
 <div class="section" id="id1">
-<h3><a class="toc-backref" href="#id11"><span class="sectnum">1.1.1</span> 教程链接</a><a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id7"><span class="sectnum">1.1.1</span> 教程链接</a><a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
 <p><a class="reference external" href="http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html">持续集成服务TravisCI教程-阮一峰</a></p>
 <p><a class="reference external" href="https://oncletom.io/2016/travis-ssh-deploy/">SSH deploys with Travis CI-frenchman</a></p>
 <p><a class="reference external" href="https://docs.travis-ci.com/user/deployment/pages/">spec for deploy of github pages</a></p>
@@ -143,9 +148,9 @@
 </div>
 </div>
 <div class="section" id="id2">
-<h2><a class="toc-backref" href="#id12"><span class="sectnum">1.2</span> 案例</a><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<h2><a class="toc-backref" href="#id8"><span class="sectnum">1.2</span> 案例</a><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <div class="section" id="gcc-c">
-<h3><a class="toc-backref" href="#id13"><span class="sectnum">1.2.1</span> gcc c</a><a class="headerlink" href="#gcc-c" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id9"><span class="sectnum">1.2.1</span> gcc c</a><a class="headerlink" href="#gcc-c" title="永久链接至标题">¶</a></h3>
 <p>同时我们需要在仓库中编写一份名为.travis.yml的配置文件，来指定我们的项目需要进行怎样的操作。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span><span class="p">:</span> <span class="n">required</span>
 <span class="n">language</span><span class="p">:</span> <span class="n">c</span>
@@ -163,7 +168,7 @@
 <p>可以看到这里指定了需要的sudo权限，编程语言，编译器，script即执行的操作，before_script则安装了项目依赖的libev-dev包，通知的方式email，并且指定了邮件地址。</p>
 </div>
 <div class="section" id="official-deploy-spec">
-<h3><a class="toc-backref" href="#id14"><span class="sectnum">1.2.2</span> official deploy spec</a><a class="headerlink" href="#official-deploy-spec" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id10"><span class="sectnum">1.2.2</span> official deploy spec</a><a class="headerlink" href="#official-deploy-spec" title="永久链接至标题">¶</a></h3>
 <p>For a minimal configuration, add the following to your .travis.yml:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>deploy:
   provider: pages
@@ -191,7 +196,7 @@ name: Optional, committer, defaults to Deployment Bot.</p>
 <p>deployment_file: Optional, defaults to false, enables creation of deployment-info files.</p>
 </div>
 <div class="section" id="official-notification-spec">
-<h3><a class="toc-backref" href="#id15"><span class="sectnum">1.2.3</span> official notification spec</a><a class="headerlink" href="#official-notification-spec" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id11"><span class="sectnum">1.2.3</span> official notification spec</a><a class="headerlink" href="#official-notification-spec" title="永久链接至标题">¶</a></h3>
 <p>Configuring email notifications
 Specify when you want to get notified:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">notifications</span><span class="p">:</span>
@@ -206,10 +211,11 @@ Specify when you want to get notified:</p>
 </div>
 </div>
 <div class="section" id="id3">
-<h2><a class="toc-backref" href="#id16"><span class="sectnum">1.3</span> travis CI 问题集锦</a><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
-<p>KDOC:</p>
+<h2><a class="toc-backref" href="#id12"><span class="sectnum">1.3</span> travis CI 问题集锦</a><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<div class="section" id="kdoc">
+<h3><a class="toc-backref" href="#id13"><span class="sectnum">1.3.1</span> KDOC:</a><a class="headerlink" href="#kdoc" title="永久链接至标题">¶</a></h3>
 <div class="section" id="travis-ci-env-vs">
-<h3><a class="toc-backref" href="#id17"><span class="sectnum">1.3.1</span> travis CI环境变量 设置,env: -单行 VS 多行</a><a class="headerlink" href="#travis-ci-env-vs" title="永久链接至标题">¶</a></h3>
+<h4><a class="toc-backref" href="#id14"><span class="sectnum">1.3.1.1</span> travis CI环境变量 设置,env: -单行 VS 多行</a><a class="headerlink" href="#travis-ci-env-vs" title="永久链接至标题">¶</a></h4>
 <p>不能这样分开写：会报错，变量找不到，要写到同一行</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>env:
   - T_DIR_BASE_SRC=$TRAVIS_BUILD_DIR/003work/002memo
@@ -227,7 +233,7 @@ Specify when you want to get notified:</p>
 <p>一个build要写到同一行中, 不同行是不同的build中的变量</p>
 </div>
 <div class="section" id="linux-makefile-vs-makefile">
-<h3><a class="toc-backref" href="#id18"><span class="sectnum">1.3.2</span> linux上文件名大小写敏感，包括后缀名。Makefile VS makefile</a><a class="headerlink" href="#linux-makefile-vs-makefile" title="永久链接至标题">¶</a></h3>
+<h4><a class="toc-backref" href="#id15"><span class="sectnum">1.3.1.2</span> linux上文件名大小写敏感，包括后缀名。Makefile VS makefile</a><a class="headerlink" href="#linux-makefile-vs-makefile" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>make startconv -f $TRAVIS_BUILD_DIR/003work/000tools/002makefiles/001pandoc/linux/makefile
 </pre></div>
 </div>
@@ -236,7 +242,7 @@ Specify when you want to get notified:</p>
 <p>.c 和 .C 也是不一样的，要用脚本更改过来。</p>
 </div>
 <div class="section" id="cp-mkdir-p">
-<h3><a class="toc-backref" href="#id19"><span class="sectnum">1.3.3</span> cp目标目录不存在，先mkdir -p</a><a class="headerlink" href="#cp-mkdir-p" title="永久链接至标题">¶</a></h3>
+<h4><a class="toc-backref" href="#id16"><span class="sectnum">1.3.1.3</span> cp目标目录不存在，先mkdir -p</a><a class="headerlink" href="#cp-mkdir-p" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ifdef DIR_BASE_COPYTO
     @echo copy $(SUFFIX_TO) file to {hexo post}$(DIR_BASE_COPYTO) ...
 #   cp $$@ $(dir $(subst $(DIR_BASE_OBJ),$(DIR_BASE_COPYTO),$(1)))
@@ -248,13 +254,13 @@ endif
 </div>
 </div>
 <div class="section" id="gnumake-filegbk-file-iconv">
-<h3><a class="toc-backref" href="#id20"><span class="sectnum">1.3.4</span> gnumake-file写文件命令输出GBK码，$(file, 需iconv转换</a><a class="headerlink" href="#gnumake-filegbk-file-iconv" title="永久链接至标题">¶</a></h3>
+<h4><a class="toc-backref" href="#id17"><span class="sectnum">1.3.1.4</span> gnumake-file写文件命令输出GBK码，$(file, 需iconv转换</a><a class="headerlink" href="#gnumake-filegbk-file-iconv" title="永久链接至标题">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$(file &gt;$$@.tmp
 </pre></div>
 </div>
 </div>
 <div class="section" id="iconv-gbk-utf8">
-<h3><a class="toc-backref" href="#id21"><span class="sectnum">1.3.5</span> iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</a><a class="headerlink" href="#iconv-gbk-utf8" title="永久链接至标题">¶</a></h3>
+<h4><a class="toc-backref" href="#id18"><span class="sectnum">1.3.1.5</span> iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</a><a class="headerlink" href="#iconv-gbk-utf8" title="永久链接至标题">¶</a></h4>
 <p>从文件系统中取到的中文目录名和makefile中的中文，变成了几个乱码导致iconv认为是不认识的GBK码，从而iconv报错</p>
 <p>$(file 在输出中文文件和文件夹名字时，不知道成了什么编码，反正是乱码，自然不能在转换字库中找到了。</p>
 <p>所以加入-c,表示忽略。即保持原样不转换。</p>
@@ -265,59 +271,18 @@ endif
 </div>
 </div>
 <div class="section" id="id4">
-<h3><a class="toc-backref" href="#id22"><span class="sectnum">1.3.6</span> 真正原因：iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</a><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<h4><a class="toc-backref" href="#id19"><span class="sectnum">1.3.1.6</span> 真正原因：iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</a><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h4>
 <p>.travis.yml 是以 UTF-16 littel endian (0xFFFE)存储的。 所以make带入的参数 ADD_HEXO_TAG_FROM_DIR=技术 也是UTF16LE的。</p>
 <p><cite>/linux/Makefile</cite> 是以no BOM的自然方式存储的，后来发觉不是UTF8的模式，是以中文windows的codePage存储的，所以是GBK码形式的。</p>
 <p>这样前面问题就可以解释了,  <cite>$(file &gt;$$&#64;.tmp</cite> 写入文件时， makefile中自然写入的中文”笔记”，被写成GBK码，.travis.yml带入的参数“技术”，却写入的是UTF16LE，同一文件中有不同的编码，这样如果用iconv转换自然会报错，UTF16LE编码的中文在GBK库中是没有的。同时如果用iconv强行当GBK转换就会乱了不知道是什么结果,如果保持原值用UTF8来解释自然就是乱码了。</p>
+<p>所以不管是用iconv转换，还是不转都有一种是有问题的，一个好，一个不好。</p>
 <p>解决方法：</p>
+<p>都用同一种格式存储，再决定转还是不转。建议utf8</p>
 <p>把 <cite>/linux/Makefile</cite> 存储成UTF8的。
 这样发觉iconv也可以不用了，大概 <cite>$(file &gt;$$&#64;.tmp</cite> 写入文件时，系统自然就把文件格式设成了UTF,然后用 <cite>pandoc $$&lt; -o - &gt;&gt;$$&#64;</cite> append模式添加输入UTF时，就成了utf了。 有一点没搞清楚，到底最后成了UTF8还是UTF16LE，猜想大概是utf8.</p>
 <p>字符编码小知识： 参见 字符文件编码.rst 字符编码小知识</p>
+<hr class="docutils" />
 </div>
-<div class="section" id="misc-raw-materials">
-<h3><a class="toc-backref" href="#id23"><span class="sectnum">1.3.7</span> misc - raw materials</a><a class="headerlink" href="#misc-raw-materials" title="永久链接至标题">¶</a></h3>
-<hr class="docutils" />
-<p>用echo $date，结果只输出一个ate</p>
-<hr class="docutils" />
-<p>date +%Y%m%d -d &#64;1425384141</p>
-<hr class="docutils" />
-<p>cp -t -T问题,想copy目录里的文件和子目录，travis提示错</p>
-<hr class="docutils" />
-<p>只查看最后一行
-tail -1</p>
-<hr class="docutils" />
-<p>%ad
-author date (format respects –date= option)</p>
-<p>–date=iso (or –date=iso8601) shows timestamps in a ISO 8601-like format. The differences to the strict ISO 8601 format are:</p>
-<p>可以解决拉取全部历史原数据到本地的问题，不加在clone时，只是本分支的历史。这样git log 能拿到文件所有commit的时间</p>
-<p># 根据上面网址介绍加入下面两行
-git:</p>
-<blockquote>
-<div><p>depth: false</p>
-</div></blockquote>
-<p><a href="#id7"><span class="problematic" id="id8">`https://hexo.io/zh-cn/docs/variables.html#%E9%A1%B5%E9%9D%A2%E5%8F%98%E9%87%8F
-&gt;`__</span></a></p>
-<p>???
-Linux下修改文件创建时间(修改文件更改时间)
-进到要改的文件目录里
-find . -name “*” -exec touch ‘{}’ ;
-注：最后一定要加分号，{}外一定要加单引号，<a href="#id5"><span class="problematic" id="id6">*</span></a>表示所有的文件（. 代表当前目录下）</p>
-<p>???
-<a class="reference external" href="http://wp.huangshiyang.com/hexo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">Hexo常见问题解决方案</a></p>
-<p><a class="reference external" href="https://code.skyheng.com/post/50982.html">Hexo搭建技术博客使用与常见问题详细讲解</a></p>
-<p><a class="reference external" href="https://www.jianshu.com/p/ef88b5bbb914">大前端-5分钟带你读懂Hexo源码设计模式</a></p>
-<p><a class="reference external" href="https://blog.csdn.net/li20081006/article/details/73319054">Hexo源码剖析</a></p>
-<p><a class="reference external" href="https://segmentfault.com/a/1190000018082781?utm_source=tag-newest">hexo博客框架从入门到弃坑</a></p>
-<p><a class="reference external" href="https://www.jianshu.com/p/7bec9866a04d">hexo-generator-index 源码分析</a></p>
-<p><a class="reference external" href="https://hexo.io/zh-cn/api/filter">hexo过滤器before_post_render-themescriptsfilterskl-touch-file-time.js</a></p>
-<p>` &lt;&gt;`__</p>
-<p>` &lt;&gt;`__</p>
-<p>` &lt;&gt;`__</p>
-<p>` &lt;&gt;`__</p>
-<p>` &lt;&gt;`__</p>
-<p>` &lt;&gt;`__</p>
-<p>` &lt;&gt;`__</p>
-<p>` &lt;&gt;`__</p>
 </div>
 </div>
 </div>
