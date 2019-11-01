@@ -655,14 +655,14 @@ book类默认为openright模式，这也是为什么book类的奇数页面与偶
 <p>其实用tex就可以合并pdf, 而且这个方法是跨平台的,无论widows, linux, Mac X,
 只要有装了tex和宏包pdfpages,这个宏包一般的tex发行版默认都包含了,
 texlive就已经有了. 代码:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\\<span class="n">documentclass</span><span class="p">[</span><span class="n">a4paper</span><span class="p">]{</span><span class="n">article</span><span class="p">}</span>
-\\<span class="n">usepackage</span><span class="p">{</span><span class="n">pdfpages</span><span class="p">}</span>
-\\<span class="n">begin</span><span class="p">{</span><span class="n">document</span><span class="p">}</span>
-\\<span class="n">includepdfmerge</span><span class="p">{</span><span class="mf">1.</span><span class="n">pdf</span><span class="p">,</span><span class="mi">1</span><span class="o">-</span><span class="mi">3</span><span class="p">}</span>
-\\<span class="n">includepdfmerge</span><span class="p">{</span><span class="mf">2.</span><span class="n">pdf</span><span class="p">,</span><span class="mi">5</span><span class="o">-</span><span class="mi">13</span><span class="p">}</span>
-\\<span class="n">end</span><span class="p">{</span><span class="n">document</span><span class="p">}</span>
-<span class="n">其中命令</span>\\<span class="n">includepdfmerge</span><span class="p">{</span><span class="mf">1.</span><span class="n">pdf</span><span class="p">,</span><span class="mi">1</span><span class="o">-</span><span class="mi">3</span><span class="p">}</span><span class="n">就是导入1</span><span class="o">.</span><span class="n">pdf的1至3页</span><span class="o">.</span>
-<span class="n">命令</span>\\<span class="n">includepdfmerge</span><span class="p">{</span><span class="mf">2.</span><span class="n">pdf</span><span class="p">,</span><span class="mi">5</span><span class="o">-</span><span class="mi">13</span><span class="p">}</span><span class="n">就是导入2</span><span class="o">.</span><span class="n">pdf的5至13页</span><span class="o">.</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">//</span><span class="n">documentclass</span><span class="p">[</span><span class="n">a4paper</span><span class="p">]{</span><span class="n">article</span><span class="p">}</span>
+<span class="o">//</span><span class="n">usepackage</span><span class="p">{</span><span class="n">pdfpages</span><span class="p">}</span>
+<span class="o">//</span><span class="n">begin</span><span class="p">{</span><span class="n">document</span><span class="p">}</span>
+<span class="o">//</span><span class="n">includepdfmerge</span><span class="p">{</span><span class="mf">1.</span><span class="n">pdf</span><span class="p">,</span><span class="mi">1</span><span class="o">-</span><span class="mi">3</span><span class="p">}</span>
+<span class="o">//</span><span class="n">includepdfmerge</span><span class="p">{</span><span class="mf">2.</span><span class="n">pdf</span><span class="p">,</span><span class="mi">5</span><span class="o">-</span><span class="mi">13</span><span class="p">}</span>
+<span class="o">//</span><span class="n">end</span><span class="p">{</span><span class="n">document</span><span class="p">}</span>
+<span class="n">其中命令</span><span class="o">//</span><span class="n">includepdfmerge</span><span class="p">{</span><span class="mf">1.</span><span class="n">pdf</span><span class="p">,</span><span class="mi">1</span><span class="o">-</span><span class="mi">3</span><span class="p">}</span><span class="n">就是导入1</span><span class="o">.</span><span class="n">pdf的1至3页</span><span class="o">.</span>
+<span class="n">命令</span><span class="o">//</span><span class="n">includepdfmerge</span><span class="p">{</span><span class="mf">2.</span><span class="n">pdf</span><span class="p">,</span><span class="mi">5</span><span class="o">-</span><span class="mi">13</span><span class="p">}</span><span class="n">就是导入2</span><span class="o">.</span><span class="n">pdf的5至13页</span><span class="o">.</span>
 </pre></div>
 </div>
 </div>
