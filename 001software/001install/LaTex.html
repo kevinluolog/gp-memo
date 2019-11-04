@@ -74,12 +74,16 @@
 <li><a class="reference internal" href="#id5"><span class="sectnum">1.3.3.1</span> 使用PSTricks绘制精致的流程图</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#misc"><span class="sectnum">1.3.4</span> MISC</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#faq"><span class="sectnum">1.4</span> FAQ</a><ul>
-<li><a class="reference internal" href="#pdflatexxelatex"><span class="sectnum">1.4.1</span> PDFLaTeX和XeLaTeX有什么区别</a></li>
-<li><a class="reference internal" href="#latex-tex"><span class="sectnum">1.4.2</span> LaTeX 与 TeX 有什么本质区别</a></li>
+<li><a class="reference internal" href="#latexhelp"><span class="sectnum">1.4</span> latex命令help</a><ul>
+<li><a class="reference internal" href="#xelatex-help"><span class="sectnum">1.4.1</span> xelatex –help</a></li>
+<li><a class="reference internal" href="#misc"><span class="sectnum">1.4.2</span> MISC</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#faq"><span class="sectnum">1.5</span> FAQ</a><ul>
+<li><a class="reference internal" href="#pdflatexxelatex"><span class="sectnum">1.5.1</span> PDFLaTeX和XeLaTeX有什么区别</a></li>
+<li><a class="reference internal" href="#latex-tex"><span class="sectnum">1.5.2</span> LaTeX 与 TeX 有什么本质区别</a></li>
 </ul>
 </li>
 </ul>
@@ -150,13 +154,18 @@
 <li><p><a class="reference internal" href="#id5" id="id23"><span class="sectnum">1.3.3.1</span> 使用PSTricks绘制精致的流程图</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#misc" id="id24"><span class="sectnum">1.3.4</span> MISC</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#faq" id="id25"><span class="sectnum">1.4</span> FAQ</a></p>
+<li><p><a class="reference internal" href="#latexhelp" id="id24"><span class="sectnum">1.4</span> latex命令help</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#pdflatexxelatex" id="id26"><span class="sectnum">1.4.1</span> PDFLaTeX和XeLaTeX有什么区别</a></p></li>
-<li><p><a class="reference internal" href="#latex-tex" id="id27"><span class="sectnum">1.4.2</span> LaTeX 与 TeX 有什么本质区别</a></p></li>
+<li><p><a class="reference internal" href="#xelatex-help" id="id25"><span class="sectnum">1.4.1</span> xelatex –help</a></p></li>
+<li><p><a class="reference internal" href="#misc" id="id26"><span class="sectnum">1.4.2</span> MISC</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#faq" id="id27"><span class="sectnum">1.5</span> FAQ</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#pdflatexxelatex" id="id28"><span class="sectnum">1.5.1</span> PDFLaTeX和XeLaTeX有什么区别</a></p></li>
+<li><p><a class="reference internal" href="#latex-tex" id="id29"><span class="sectnum">1.5.2</span> LaTeX 与 TeX 有什么本质区别</a></p></li>
 </ul>
 </li>
 </ul>
@@ -319,12 +328,72 @@ LaTeX中支持PGF(Portable Graphics Format/Pretty,Good,Functional).PGF能够画�
 <p><a class="reference external" href="http://blog.sina.com.cn/s/blog_5e16f1770102e77g.html">使用PSTricks绘制精致的流程图</a>
 一个好用的package地址在http://texnik.dante.de/tex/generic/pstricks-add/  大家也可以下载替换系统的 texlive/2011/texmf-local/tex/generic/pstricks-add/pstricks-add.tex 文件，或者就放在自己编码的文件目录下也可。
 我们可以利用已有的命令绘制出精致的流程图</p>
+</div>
+</div>
+</div>
+<div class="section" id="latexhelp">
+<h2><a class="toc-backref" href="#id24"><span class="sectnum">1.4</span> latex命令help</a><a class="headerlink" href="#latexhelp" title="永久链接至标题">¶</a></h2>
+<div class="section" id="xelatex-help">
+<h3><a class="toc-backref" href="#id25"><span class="sectnum">1.4.1</span> xelatex –help</a><a class="headerlink" href="#xelatex-help" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>xelatex --help
+Usage: xetex [OPTION]... [TEXNAME[.tex]] [COMMANDS]
+   or: xetex [OPTION]... \FIRST-LINE
+   or: xetex [OPTION]... &amp;FMT ARGS
+  Run XeTeX on TEXNAME, usually creating TEXNAME.pdf.
+  Any remaining COMMANDS are processed as XeTeX input, after TEXNAME is read.
+  If the first line of TEXNAME is %&amp;FMT, and FMT is an existing .fmt file,
+  use it.  Else use `NAME.fmt&#39;, where NAME is the program invocation name,
+  most commonly `xetex&#39;.
+
+  Alternatively, if the first non-option argument begins with a backslash,
+  interpret all non-option arguments as a line of XeTeX input.
+
+  Alternatively, if the first non-option argument begins with a &amp;, the
+  next word is taken as the FMT to read, overriding all else.  Any
+  remaining arguments are processed as above.
+
+  If no arguments or options are specified, prompt for input.
+
+-etex                   enable e-TeX extensions
+[-no]-file-line-error   disable/enable file:line:error style messages
+-fmt=FMTNAME            use FMTNAME instead of program name or a %&amp; line
+-halt-on-error          stop processing at the first error
+-ini                    be xeinitex, for dumping formats; this is implicitly
+                          true if the program name is `xeinitex&#39;
+-interaction=STRING     set interaction mode (STRING=batchmode/nonstopmode/
+                          scrollmode/errorstopmode)
+-jobname=STRING         set the job name to STRING
+-kpathsea-debug=NUMBER  set path searching debugging flags according to
+                          the bits of NUMBER
+[-no]-mktex=FMT         disable/enable mktexFMT generation (FMT=tex/tfm)
+-mltex                  enable MLTeX extensions such as \charsubdef
+-output-comment=STRING  use STRING for XDV file comment instead of date
+-output-directory=DIR   use existing DIR as the directory to write files in
+-output-driver=CMD      use CMD as the XDV-to-PDF driver instead of xdvipdfmx
+-no-pdf                 generate XDV (extended DVI) output rather than PDF
+[-no]-parse-first-line  disable/enable parsing of first line of input file
+-papersize=STRING       set PDF media size to STRING
+-progname=STRING        set program (and fmt) name to STRING
+-recorder               enable filename recorder
+[-no]-shell-escape      disable/enable \write18{SHELL COMMAND}
+-shell-restricted       enable restricted \write18
+-src-specials           insert source specials into the XDV file
+-src-specials=WHERE     insert source specials in certain places of
+                          the XDV file. WHERE is a comma-separated value
+                          list: cr display hbox math par parend vbox
+-synctex=NUMBER         generate SyncTeX data for previewers according to
+                          bits of NUMBER (`man synctex&#39; for details)
+-translate-file=TCXNAME (ignored)
+-8bit                   make all characters printable, don&#39;t use ^^X sequences
+-help                   display this help and exit
+-version                output version information and exit
+</pre></div>
+</div>
 <p>TIPS
 ===</p>
 </div>
-</div>
 <div class="section" id="misc">
-<h3><a class="toc-backref" href="#id24"><span class="sectnum">1.3.4</span> MISC</a><a class="headerlink" href="#misc" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id26"><span class="sectnum">1.4.2</span> MISC</a><a class="headerlink" href="#misc" title="永久链接至标题">¶</a></h3>
 <ol class="arabic simple">
 <li><p>参考文献可以搜bibtex，</p></li>
 <li><p>制作幻灯片可以搜beamer。</p></li>
@@ -332,16 +401,16 @@ LaTeX中支持PGF(Portable Graphics Format/Pretty,Good,Functional).PGF能够画�
 </div>
 </div>
 <div class="section" id="faq">
-<h2><a class="toc-backref" href="#id25"><span class="sectnum">1.4</span> FAQ</a><a class="headerlink" href="#faq" title="永久链接至标题">¶</a></h2>
+<h2><a class="toc-backref" href="#id27"><span class="sectnum">1.5</span> FAQ</a><a class="headerlink" href="#faq" title="永久链接至标题">¶</a></h2>
 <div class="section" id="pdflatexxelatex">
-<h3><a class="toc-backref" href="#id26"><span class="sectnum">1.4.1</span> PDFLaTeX和XeLaTeX有什么区别</a><a class="headerlink" href="#pdflatexxelatex" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id28"><span class="sectnum">1.5.1</span> PDFLaTeX和XeLaTeX有什么区别</a><a class="headerlink" href="#pdflatexxelatex" title="永久链接至标题">¶</a></h3>
 <dl class="simple">
 <dt>区别: pdflatex and xelatex</dt><dd><p>pdfLaTeX是比较原始的版本，对Unicode的支持不是很好，所以显示汉字需要使用CJK宏包。它不支持操作系统的truetype字体(*.ttf)，只能使用type1字体。优点是支持的宏包比较多，有些老一点的宏包必须用pdfLaTeX来编译。XeLaTeX是新的Unicode版本，内建支持Unicode(UTF-8)，自然也包括汉字在内，而且可以调用操作系统的truetype字体。如果你的文档有汉字，那么推荐用XeLaTeX。缺点是不支持某一些宏包。</p>
 </dd>
 </dl>
 </div>
 <div class="section" id="latex-tex">
-<h3><a class="toc-backref" href="#id27"><span class="sectnum">1.4.2</span> LaTeX 与 TeX 有什么本质区别</a><a class="headerlink" href="#latex-tex" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id29"><span class="sectnum">1.5.2</span> LaTeX 与 TeX 有什么本质区别</a><a class="headerlink" href="#latex-tex" title="永久链接至标题">¶</a></h3>
 <p>TeX是排版引擎，是给机器下指令的。它有好多种具体的实现。
 LaTeX是宏包，方便用户调用TeX。
 另外，比如XeTeX同样也是排版引擎，是TeX的一种实现，增加了对万国码的支持。
